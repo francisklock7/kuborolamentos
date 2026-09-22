@@ -14,7 +14,7 @@ Site estático (HTML + CSS + JS puro, sem build). Pronto para Vercel.
 ├── robots.txt
 ├── sitemap.xml
 ├── vercel.json         URLs limpas, cache e cabeçalhos de segurança
-└── images/             logos, ilustrações técnicas e imagem de compartilhamento
+├── *.svg / *.png       logos, ilustrações técnicas e imagem de compartilhamento
 ```
 
 ## Publicar na Vercel
@@ -35,4 +35,4 @@ Site estático (HTML + CSS + JS puro, sem build). Pronto para Vercel.
 
 ## Imagens
 
-As ilustrações em `images/*.svg` são desenhos técnicos vetoriais próprios. Quando houver fotos reais (amostras dos fornecedores, frotas de clientes com autorização), use WebP com largura até 1600 px e mantenha `width`, `height` e `alt` descritivo.
+As ilustrações (`*.svg`) são desenhos técnicos vetoriais próprios. Quando houver fotos reais (amostras dos fornecedores, frotas de clientes com autorização), use WebP com largura até 1600 px e mantenha `width`, `height` e `alt` descritivo.
