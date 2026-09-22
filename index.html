@@ -1,638 +1,1285 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rolamentos para Caminhão: Cubo de Roda, Diferencial e Câmbio | KUBO</title>
-  <meta name="description" content="Rolamentos para linha pesada com fornecimento B2B para frotas: busca por código, OEM ou modelo, equivalência SKF, FAG e NTN, kits por eixo e rastreabilidade por lote.">
-  <link rel="canonical" href="https://www.kuborolamentos.com.br/">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#2B303A">
-
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="KUBO Rolamentos">
-  <meta property="og:title" content="Rolamentos para linha pesada com aplicação conferida | KUBO">
-  <meta property="og:description" content="Cubo de roda, diferencial e transmissão. Equivalências, kits por eixo e programa B2B para frotas.">
-  <meta property="og:url" content="https://www.kuborolamentos.com.br/">
-  <meta property="og:image" content="https://www.kuborolamentos.com.br/og-kubo-rolamentos.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Desenho técnico de rolamento cônico 32218 com a marca KUBO Rolamentos">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap">
-  <link rel="preload" as="image" href="/rolamento-conico-32218-desenho-tecnico.svg">
-  <link rel="stylesheet" href="/styles.css">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.kuborolamentos.com.br/#organizacao", "name": "KUBO Rolamentos", "url": "https://www.kuborolamentos.com.br/", "logo": "https://www.kuborolamentos.com.br/logo-kubo-rolamentos.png", "description": "Fornecimento B2B de rolamentos para linha pesada: cubo de roda, diferencial e transmissão de caminhões e carretas, com aplicação conferida e rastreabilidade por lote.", "areaServed": {"@type": "Country", "name": "Brasil"}, "knowsAbout": ["rolamento de rolos cônicos", "rolamento de cubo de roda", "rolamento de diferencial", "rolamento de caixa de câmbio", "equivalência de rolamentos", "linha pesada"], "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "telephone": "+55-51-99999-9999", "availableLanguage": ["pt-BR"], "areaServed": "BR"}}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://www.kuborolamentos.com.br/#site", "url": "https://www.kuborolamentos.com.br/", "name": "KUBO Rolamentos", "inLanguage": "pt-BR", "publisher": {"@id": "https://www.kuborolamentos.com.br/#organizacao"}}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como a KUBO confere a aplicação antes de cotar?", "acceptedAnswer": {"@type": "Answer", "text": "Cada pedido é cruzado por código do rolamento, código OEM e posição no veículo (modelo, ano, eixo e lado). Quando a referência vem de uma peça sem gravação legível, pedimos d, D e T medidos ou foto da gravação da capa e do cone antes de fechar a cotação."}}, {"@type": "Question", "name": "Os sufixos X, J2, A, XL e o prefixo 4T mudam a aplicação?", "acceptedAnswer": {"@type": "Answer", "text": "A designação base ISO define as dimensões principais; sufixos e prefixos indicam gaiola, perfil interno, capacidade ou versão de projeto de cada fabricante. Em aplicações de cubo e pinhão, a correspondência de sufixo é conferida caso a caso contra a peça original, e não tratada como intercambiável por padrão."}}, {"@type": "Question", "name": "Como funciona a rastreabilidade?", "acceptedAnswer": {"@type": "Answer", "text": "Cada lote liberado tem ficha própria com os resultados de inspeção de recebimento. O número de lote vai gravado na peça e impresso na embalagem, o que permite rastrear qualquer rolamento montado na frota até a sua liberação."}}, {"@type": "Question", "name": "Vocês fornecem kit completo por posição de eixo?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Os kits de cubo reúnem rolamento interno, rolamento externo e retentor da mesma posição, em um código de pedido, para que a revisão não pare por falta de um item."}}, {"@type": "Question", "name": "Como é definida a tabela B2B?", "acceptedAnswer": {"@type": "Answer", "text": "A condição comercial é definida depois do cadastro, a partir do tamanho da frota, do consumo mensal estimado e da recorrência de compra. Frotas com programação preventiva têm condição e prioridade de estoque próprias."}}, {"@type": "Question", "name": "Atendem oficinas e distribuidores?", "acceptedAnswer": {"@type": "Answer", "text": "O foco é frota com manutenção própria. Oficinas especializadas, retíficas e distribuidores podem se cadastrar no programa de parceiros; o atendimento é avaliado por volume e região."}}]}</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolamentos para Caminhão: Cubo de Roda, Diferencial e Câmbio | KUBO</title>
+    <meta name="description" content="Rolamentos para linha pesada com fornecimento B2B para frotas: busca por código, OEM ou modelo, equivalência SKF, FAG e NTN, kits por eixo e rastreabilidade por lote.">
+    <link rel="canonical" href="https://www.kuborolamentos.com.br/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#2B303A">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="KUBO Rolamentos">
+    <meta property="og:title" content="Rolamentos para linha pesada com aplicação conferida | KUBO">
+    <meta property="og:description" content="Cubo de roda, diferencial e transmissão. Equivalências, kits por eixo e programa B2B para frotas.">
+    <meta property="og:url" content="https://www.kuborolamentos.com.br/">
+    <meta property="og:image" content="https://www.kuborolamentos.com.br/og-kubo-rolamentos.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Ícones -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kubo: {
+                            dark: '#2B303A',      /* Grafite Chumbo */
+                            medium: '#5C6B73',    /* Cinza Mecânico */
+                            steel: '#A8B2B7',     /* Cinza Aço Escovado */
+                            light: '#F4F6F8',     /* Off-White Industrial */
+                            accent: '#2563EB',    /* Azul Técnico para CTA */
+                            accentHover: '#1D4ED8',
+                            success: '#10B981'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #F4F6F8; }
+        ::-webkit-scrollbar-thumb { background: #A8B2B7; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #5C6B73; }
+        .bg-grid-pattern {
+            background-image: radial-gradient(#A8B2B7 0.75px, transparent 0.75px);
+            background-size: 16px 16px;
+        }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] .faq-chevron { transform: rotate(180deg); }
+        .sku-card.destaque { border-color: #2563EB; box-shadow: 0 0 0 3px rgba(37, 99, 235, .2); }
+        input[type=range] { accent-color: #2B303A; }
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.kuborolamentos.com.br/#organizacao", "name": "KUBO Rolamentos", "url": "https://www.kuborolamentos.com.br/", "logo": "https://www.kuborolamentos.com.br/logo-kubo-rolamentos.png", "description": "Fornecimento B2B de rolamentos para linha pesada: cubo de roda, diferencial e transmissão de caminhões e carretas, com aplicação conferida e rastreabilidade por lote.", "areaServed": {"@type": "Country", "name": "Brasil"}, "knowsAbout": ["rolamento de rolos cônicos", "rolamento de cubo de roda", "rolamento de diferencial", "rolamento de caixa de câmbio", "equivalência de rolamentos", "linha pesada"], "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "telephone": "+55-51-99999-9999", "availableLanguage": ["pt-BR"], "areaServed": "BR"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://www.kuborolamentos.com.br/#site", "url": "https://www.kuborolamentos.com.br/", "name": "KUBO Rolamentos", "inLanguage": "pt-BR", "publisher": {"@id": "https://www.kuborolamentos.com.br/#organizacao"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como a KUBO confere a aplicação antes de cotar?", "acceptedAnswer": {"@type": "Answer", "text": "Cada pedido é cruzado por código do rolamento, código OEM e posição no veículo (modelo, ano, eixo e lado). Quando a referência vem de uma peça sem gravação legível, pedimos d, D e T medidos ou foto da gravação da capa e do cone antes de fechar a cotação."}}, {"@type": "Question", "name": "Os sufixos X, J2, A, XL e o prefixo 4T mudam a aplicação?", "acceptedAnswer": {"@type": "Answer", "text": "A designação base ISO define as dimensões principais; sufixos e prefixos indicam gaiola, perfil interno, capacidade ou versão de projeto de cada fabricante. Em cubo e pinhão, a correspondência de sufixo é conferida caso a caso contra a peça original, e não tratada como intercambiável por padrão."}}, {"@type": "Question", "name": "Como funciona a rastreabilidade?", "acceptedAnswer": {"@type": "Answer", "text": "Cada lote liberado tem ficha própria com os resultados da inspeção. O número de lote vai gravado na peça e impresso na embalagem, o que permite rastrear qualquer rolamento montado na frota até a sua liberação."}}, {"@type": "Question", "name": "Vocês fornecem kit completo por posição de eixo?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Os kits de cubo reúnem rolamento interno, rolamento externo e retentor da mesma posição em um código de pedido, para a revisão não parar por falta de um item."}}, {"@type": "Question", "name": "Como é definida a tabela B2B?", "acceptedAnswer": {"@type": "Answer", "text": "A condição comercial é definida depois do cadastro, a partir do tamanho da frota, do consumo mensal estimado e da recorrência de compra. Frotas com programação preventiva têm condição e prioridade de estoque próprias."}}, {"@type": "Question", "name": "Atendem oficinas e distribuidores?", "acceptedAnswer": {"@type": "Answer", "text": "O foco é frota com manutenção própria. Oficinas especializadas, retíficas e distribuidores podem se cadastrar no programa de parceiros; o atendimento é avaliado por volume e região."}}]}</script>
 </head>
-<body>
-  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<body class="bg-white text-kubo-dark font-sans antialiased selection:bg-kubo-dark selection:text-white">
 
-  <header class="topo">
-    <div class="wrap">
-      <a class="marca" href="/" aria-label="KUBO Rolamentos, página inicial">
-        <img src="/logo-kubo-rolamentos.png" alt="KUBO Rolamentos" width="150" height="60">
-      </a>
-      <nav class="menu" id="menu" aria-label="Principal">
-        <a href="#catalogo">Catálogo técnico</a>
-        <a href="#caminhoes">Por caminhão</a>
-        <a href="#linhas">Linhas</a>
-        <a href="#engenharia">Engenharia</a>
-        <a href="#parceiros">Parceiros B2B</a>
-      </nav>
-      <a class="btn btn-acao btn-topo" href="#cadastro">Cadastrar frota</a>
-      <button class="abre-menu" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
+    <!-- Top Contact Bar -->
+    <div class="bg-kubo-dark text-gray-300 text-xs py-2 px-4 border-b border-gray-700 hidden sm:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Fabricantes certificados ISO 9001 / IATF 16949</span>
+                <span class="flex items-center gap-1.5"><i data-lucide="truck" class="w-4 h-4 text-blue-400"></i> Atendimento especializado para frotas &amp; oficinas</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="mailto:contato@kuborolamentos.com.br" class="hover:text-white transition-colors flex items-center gap-1"><i data-lucide="mail" class="w-3.5 h-3.5"></i> contato@kuborolamentos.com.br</a>
+                <a href="#cadastro" data-wa="Olá! Vim pelo site da KUBO e quero falar sobre rolamentos." class="js-wa text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1"><i data-lucide="message-square" class="w-3.5 h-3.5"></i> WhatsApp Consultivo</a>
+            </div>
+        </div>
     </div>
-  </header>
 
-  <main id="conteudo">
-    <section class="hero" aria-labelledby="titulo">
-      <div class="wrap">
-        <div>
-          <h1 id="titulo">Rolamentos para caminhões e carretas</h1>
-          <p class="lead">Aplicação conferida por eixo, kits por posição e rastreabilidade por lote. Fornecimento B2B de rolamentos de cubo de roda, diferencial e transmissão para frotas com manutenção própria.</p>
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="/" class="flex items-center" aria-label="KUBO Rolamentos, página inicial">
+                    <img src="/logo-kubo-rolamentos.png" alt="KUBO Rolamentos" width="140" height="56" class="w-[120px] sm:w-[140px] h-auto">
+                </a>
 
-          <form class="busca" role="search" id="busca" autocomplete="off">
-            <label for="busca-campo">Código, OEM, equivalente ou caminhão</label>
-            <div class="busca-campo">
-              <input id="busca-campo" name="q" type="search" placeholder="Ex.: 32218, 4T-32020X, Volvo FH"
-                     role="combobox" aria-expanded="false" aria-controls="sugestoes" aria-autocomplete="list">
-              <button type="submit">Buscar</button>
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-kubo-dark" aria-label="Principal">
+                    <a href="#catalogo" class="hover:text-kubo-accent transition-colors">Catálogo Técnico</a>
+                    <a href="#caminhoes" class="hover:text-kubo-accent transition-colors">Por Caminhão</a>
+                    <a href="#sistemas" class="hover:text-kubo-accent transition-colors">Aplicações</a>
+                    <a href="#engenharia" class="hover:text-kubo-accent transition-colors">Engenharia</a>
+                    <a href="#parceiros" class="hover:text-kubo-accent transition-colors">Parceiros B2B</a>
+                </nav>
+
+                <div class="flex items-center gap-3">
+                    <a href="#cadastro" class="hidden sm:inline-flex items-center gap-2 bg-kubo-dark hover:bg-black text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg active:scale-95">
+                        <i data-lucide="clipboard-list" class="w-4 h-4"></i>
+                        <span>Cadastrar Frota</span>
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-kubo-dark hover:bg-gray-100" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
             </div>
-            <ul class="sugestoes" id="sugestoes" role="listbox" hidden></ul>
-          </form>
-          <p class="exemplos">Mais buscados:
-            <a href="#rolamento-32020x">32020 X</a>
-            <a href="#rolamento-32218">32218</a>
-            <a href="#rolamento-30215">30215</a>
-            <a href="#rolamento-30315">30315</a>
-          </p>
         </div>
 
-        <figure class="prancheta">
-          <img src="/rolamento-conico-32218-desenho-tecnico.svg" width="720" height="470" fetchpriority="high"
-               alt="Desenho técnico do rolamento de rolos cônicos 32218 em corte e vista frontal, com diâmetro interno de 90 mm, externo de 160 mm e largura de 42,5 mm">
-          <figcaption><span class="mono">32218</span><span>Rolos cônicos, dimensões ISO 355 em mm</span></figcaption>
-        </figure>
-      </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#catalogo" class="block py-2 text-kubo-dark font-medium border-b border-gray-100">Catálogo Técnico</a>
+            <a href="#caminhoes" class="block py-2 text-kubo-dark font-medium border-b border-gray-100">Por Caminhão</a>
+            <a href="#sistemas" class="block py-2 text-kubo-dark font-medium border-b border-gray-100">Aplicações (Cubo, Diferencial, Transmissão)</a>
+            <a href="#engenharia" class="block py-2 text-kubo-dark font-medium border-b border-gray-100">Engenharia &amp; Homologação</a>
+            <a href="#parceiros" class="block py-2 text-kubo-dark font-medium border-b border-gray-100">Programa de Parceiros B2B</a>
+            <a href="#cadastro" class="w-full mt-2 bg-kubo-dark text-white py-3 rounded-lg font-bold text-center block">Cadastrar Frota</a>
+        </div>
+    </header>
+
+    <main>
+    <!-- HERO + BUSCA UNIVERSAL -->
+    <section class="relative bg-gradient-to-b from-kubo-light via-white to-white pt-10 pb-16 lg:pt-16 lg:pb-24">
+        <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-kubo-dark/5 border border-kubo-dark/10 text-kubo-dark text-xs sm:text-sm font-semibold mb-6">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Rigor de Engenharia em Linha Pesada
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-kubo-dark tracking-tight leading-tight mb-6">
+                    Rolamentos para caminhões e carretas.<br class="hidden sm:inline">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-kubo-dark via-kubo-medium to-blue-700">Zero tempo de frota parada.</span>
+                </h1>
+
+                <p class="text-base sm:text-lg text-kubo-medium leading-relaxed mb-8 max-w-2xl mx-auto">
+                    Cubo de roda, diferencial e transmissão da linha pesada. Localize por <strong class="text-kubo-dark">código, OEM, equivalente SKF/FAG/NTN ou modelo de veículo</strong>, com aplicação conferida por eixo e rastreabilidade por lote.
+                </p>
+            </div>
+
+            <!-- BUSCA UNIVERSAL -->
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border border-gray-200 p-4 sm:p-6 mb-10 relative">
+                <form id="busca" role="search" autocomplete="off" class="flex flex-col md:flex-row items-stretch gap-3">
+                    <div class="relative flex-1">
+                        <label for="busca-campo" class="sr-only">Buscar por código, OEM, equivalente ou caminhão</label>
+                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-kubo-medium">
+                            <i data-lucide="search" class="w-5 h-5"></i>
+                        </div>
+                        <input type="search" id="busca-campo" placeholder="Código (32218), equivalente (4T-32020X) ou caminhão (Volvo FH)..."
+                               role="combobox" aria-expanded="false" aria-controls="sugestoes" aria-autocomplete="list"
+                               class="w-full pl-12 pr-4 py-4 bg-kubo-light border border-gray-300 rounded-xl text-sm sm:text-base text-kubo-dark font-medium placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-kubo-dark focus:border-transparent transition-all">
+                        <ul id="sugestoes" role="listbox" hidden class="absolute left-0 right-0 top-full mt-2 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 max-h-96 overflow-y-auto divide-y divide-gray-100"></ul>
+                    </div>
+                    <button type="submit" class="bg-kubo-dark hover:bg-black text-white font-bold text-base px-8 py-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+                        <span>Buscar Peça</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </button>
+                </form>
+
+                <div class="mt-4 pt-4 border-t border-gray-100 flex flex-wrap items-center gap-2 text-xs sm:text-sm text-kubo-medium">
+                    <span class="font-semibold text-kubo-dark flex items-center gap-1"><i data-lucide="zap" class="w-3.5 h-3.5 text-amber-500"></i> Buscas Frequentes:</span>
+                    <button type="button" data-busca="32020 X" class="js-atalho px-2.5 py-1 rounded-md bg-kubo-light hover:bg-gray-200 text-kubo-dark transition-colors font-mono">32020 X</button>
+                    <button type="button" data-busca="32218" class="js-atalho px-2.5 py-1 rounded-md bg-kubo-light hover:bg-gray-200 text-kubo-dark transition-colors font-mono">32218</button>
+                    <button type="button" data-busca="30215" class="js-atalho px-2.5 py-1 rounded-md bg-kubo-light hover:bg-gray-200 text-kubo-dark transition-colors font-mono">30215</button>
+                    <button type="button" data-busca="Volvo" class="js-atalho px-2.5 py-1 rounded-md bg-kubo-light hover:bg-gray-200 text-kubo-dark transition-colors font-mono">Volvo FH</button>
+                    <button type="button" data-busca="Scania" class="js-atalho px-2.5 py-1 rounded-md bg-kubo-light hover:bg-gray-200 text-kubo-dark transition-colors font-mono">Scania R</button>
+                </div>
+            </div>
+
+            <!-- KPIs -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto pt-6 border-t border-gray-200/80">
+                <div class="p-4 rounded-xl bg-white/60 border border-gray-200/60 text-center">
+                    <p class="text-2xl sm:text-3xl font-extrabold text-kubo-dark font-mono">ISO/IATF</p>
+                    <p class="text-xs sm:text-sm text-kubo-medium font-medium mt-0.5">9001 e 16949 exigidas dos fabricantes</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/60 border border-gray-200/60 text-center">
+                    <p class="text-2xl sm:text-3xl font-extrabold text-kubo-dark font-mono">100%</p>
+                    <p class="text-xs sm:text-sm text-kubo-medium font-medium mt-0.5">Lotes rastreáveis na peça</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/60 border border-gray-200/60 text-center">
+                    <p class="text-2xl sm:text-3xl font-extrabold text-kubo-dark font-mono">Por eixo</p>
+                    <p class="text-xs sm:text-sm text-kubo-medium font-medium mt-0.5">Aplicação conferida antes da cotação</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/60 border border-gray-200/60 text-center">
+                    <p class="text-2xl sm:text-3xl font-extrabold text-kubo-dark font-mono">Agilidade</p>
+                    <p class="text-xs sm:text-sm text-kubo-medium font-medium mt-0.5">Cotação B2B em até 1 dia útil</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="kpis" aria-label="Diferenciais KUBO">
-      <div class="wrap">
-        <div class="kpi"><strong>ISO 9001 / IATF 16949</strong><span>Exigidas de todos os fabricantes homologados</span></div>
-        <div class="kpi"><strong>100% rastreável</strong><span>Lote gravado na peça e na embalagem</span></div>
-        <div class="kpi"><strong>Aplicação conferida</strong><span>Código, OEM e posição de eixo validados antes da cotação</span></div>
-        <div class="kpi"><strong>Agilidade</strong><span>Cotação B2B em até 1 dia útil</span></div>
-      </div>
+    <!-- CALCULADORA DE PREVENÇÃO DE PREJUÍZOS -->
+    <section id="calculadora" class="py-16 bg-kubo-dark text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs font-bold uppercase tracking-wider">Ferramenta Exclusiva Frotistas</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight">Quanto a falha prematura de um rolamento custa à sua frota?</h2>
+                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed">Reboque, diária de motorista, oficina e atraso contratual pesam mais que a peça. Ajuste os números da sua operação e veja o custo anual das paradas e quanto uma reposição planejada evita.</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Rastreabilidade por lote gravada na peça</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Kits por posição de eixo em um só pedido</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i> Reposição programada pelo calendário de revisões</li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-7 bg-white text-kubo-dark p-6 sm:p-8 rounded-2xl shadow-2xl">
+                    <h3 class="text-lg font-bold border-b pb-3 mb-6 flex items-center justify-between">
+                        <span>Calculadora de Prevenção de Prejuízos</span>
+                        <i data-lucide="calculator" class="w-5 h-5 text-kubo-medium"></i>
+                    </h3>
+
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-2"><label for="c-frota">Tamanho da frota:</label><output id="o-frota" class="font-mono text-kubo-accent font-bold text-base">40 veículos</output></div>
+                            <input type="range" id="c-frota" min="5" max="500" step="5" value="40" class="w-full h-2 bg-gray-200 rounded-lg cursor-pointer">
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-2"><label for="c-diaria">Custo de 1 dia de caminhão parado:</label><output id="o-diaria" class="font-mono text-kubo-accent font-bold text-base">R$ 2.500 / dia</output></div>
+                            <input type="range" id="c-diaria" min="500" max="10000" step="100" value="2500" class="w-full h-2 bg-gray-200 rounded-lg cursor-pointer">
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold mb-2"><label for="c-falhas">Paradas por veículo/ano:</label><output id="o-falhas" class="font-mono text-kubo-accent font-bold text-base">0,5</output></div>
+                                <input type="range" id="c-falhas" min="0.1" max="2" step="0.1" value="0.5" class="w-full h-2 bg-gray-200 rounded-lg cursor-pointer">
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold mb-2"><label for="c-dias">Dias parado por falha:</label><output id="o-dias" class="font-mono text-kubo-accent font-bold text-base">2 dias</output></div>
+                                <input type="range" id="c-dias" min="1" max="7" step="1" value="2" class="w-full h-2 bg-gray-200 rounded-lg cursor-pointer">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-2"><label for="c-reducao">Redução com reposição planejada:</label><output id="o-reducao" class="font-mono text-kubo-accent font-bold text-base">40%</output></div>
+                            <input type="range" id="c-reducao" min="10" max="80" step="5" value="40" class="w-full h-2 bg-gray-200 rounded-lg cursor-pointer">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-gray-100" aria-live="polite">
+                            <div class="p-4 rounded-xl bg-red-50 border border-red-100">
+                                <span class="text-xs font-semibold text-red-600 uppercase tracking-wider block">Custo Anual de Paradas</span>
+                                <span id="r-risco" class="text-xl sm:text-2xl font-black text-red-700 font-mono block mt-1">R$ 100.000</span>
+                                <span class="text-[11px] text-red-500 mt-1 block">Frota × paradas × dias × diária</span>
+                            </div>
+                            <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-100">
+                                <span class="text-xs font-semibold text-emerald-700 uppercase tracking-wider block">Prejuízo Evitável por Ano</span>
+                                <span id="r-economia" class="text-xl sm:text-2xl font-black text-emerald-700 font-mono block mt-1">R$ 40.000</span>
+                                <span class="text-[11px] text-emerald-600 mt-1 block">Com a redução de falhas informada acima</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="#cadastro" id="calc-cta" class="w-full py-3.5 px-6 rounded-xl bg-kubo-dark hover:bg-black text-white font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="shield-alert" class="w-4 h-4 text-emerald-400"></i>
+                                <span>Cadastrar Frota para Tabela de Preços B2B</span>
+                            </a>
+                            <p class="text-[11px] text-kubo-medium text-center mt-2">Simulação com os parâmetros informados. Não inclui custo de peça e mão de obra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="secao calc" id="calculadora" aria-labelledby="t-calc">
-      <div class="wrap calc-grid">
-        <div>
-          <p class="selo">Ferramenta exclusiva para frotistas</p>
-          <h2 id="t-calc">Quanto custa, por ano, um rolamento que falha antes da hora?</h2>
-          <p>Reboque, diária de motorista parado, oficina e atraso de entrega pesam mais que a peça. Ajuste os números da sua operação e veja o custo anual das paradas e o que uma reposição planejada evita.</p>
-          <ul class="calc-lista">
-            <li>Rastreabilidade por lote para auditoria de falhas</li>
-            <li>Kits por posição de eixo em um só pedido</li>
-            <li>Reposição programada por intervalo de revisão</li>
-          </ul>
-        </div>
+    <!-- CATÁLOGO TÉCNICO -->
+    <section id="catalogo" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="calc-painel" role="group" aria-labelledby="t-calc-p">
-          <h3 id="t-calc-p">Calculadora de prevenção de prejuízos</h3>
-          <div class="slider">
-            <label for="c-frota">Veículos na frota <output id="o-frota" for="c-frota">40</output></label>
-            <input type="range" id="c-frota" min="5" max="500" step="5" value="40">
-          </div>
-          <div class="slider">
-            <label for="c-diaria">Custo de 1 dia de caminhão parado <output id="o-diaria" for="c-diaria">R$ 2.500</output></label>
-            <input type="range" id="c-diaria" min="500" max="10000" step="250" value="2500">
-          </div>
-          <div class="slider">
-            <label for="c-falhas">Paradas por rolamento, por veículo/ano <output id="o-falhas" for="c-falhas">0,3</output></label>
-            <input type="range" id="c-falhas" min="0.1" max="2" step="0.1" value="0.3">
-          </div>
-          <div class="slider">
-            <label for="c-dias">Dias parado por ocorrência <output id="o-dias" for="c-dias">2</output></label>
-            <input type="range" id="c-dias" min="1" max="7" step="1" value="2">
-          </div>
-          <div class="slider">
-            <label for="c-reducao">Redução com reposição planejada <output id="o-reducao" for="c-reducao">40%</output></label>
-            <input type="range" id="c-reducao" min="10" max="80" step="5" value="40">
-          </div>
-          <div class="calc-resultado" aria-live="polite">
-            <div><span>Custo anual de paradas</span><strong id="r-risco">R$ 60.000</strong></div>
-            <div class="economia"><span>Prejuízo evitável por ano</span><strong id="r-economia">R$ 24.000</strong></div>
-          </div>
-          <p class="calc-nota">Simulação com os parâmetros informados. Custo de peça e mão de obra não incluído.</p>
-          <a class="btn btn-acao btn-largo" href="#cadastro" id="calc-cta">Cadastrar frota para tabela B2B</a>
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-kubo-medium block mb-1">Catálogo Técnico Inteligente</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-kubo-dark tracking-tight">Rolamentos de Rolos Cônicos para Linha Pesada</h2>
+                </div>
+                <p class="text-sm text-kubo-medium max-w-md">Designação ISO, dimensões d × D × T e referência cruzada SKF, FAG e NTN. Correspondência de sufixo conferida contra a peça original em cada cotação.</p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2 mb-8 border-b border-gray-200 pb-4" role="group" aria-label="Filtrar catálogo">
+                <button type="button" data-filtro="todos" aria-pressed="true" class="cat-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all bg-kubo-dark text-white shadow-sm">Todos os SKUs</button>
+                <button type="button" data-filtro="cubo" aria-pressed="false" class="cat-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all bg-kubo-light text-kubo-dark hover:bg-gray-200">Cubo de Roda</button>
+                <button type="button" data-filtro="diferencial" aria-pressed="false" class="cat-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all bg-kubo-light text-kubo-dark hover:bg-gray-200">Diferencial / Pinhão</button>
+                <span class="hidden sm:inline-block w-px h-6 bg-gray-200 mx-2"></span>
+                <button type="button" data-filtro="s320" aria-pressed="false" class="cat-btn px-3 py-2 rounded-lg text-sm font-semibold font-mono transition-all bg-kubo-light text-kubo-dark hover:bg-gray-200">320xx X</button>
+                <button type="button" data-filtro="s322" aria-pressed="false" class="cat-btn px-3 py-2 rounded-lg text-sm font-semibold font-mono transition-all bg-kubo-light text-kubo-dark hover:bg-gray-200">322xx</button>
+                <button type="button" data-filtro="s302" aria-pressed="false" class="cat-btn px-3 py-2 rounded-lg text-sm font-semibold font-mono transition-all bg-kubo-light text-kubo-dark hover:bg-gray-200">302xx</button>
+                <button type="button" data-filtro="s303" aria-pressed="false" class="cat-btn px-3 py-2 rounded-lg text-sm font-semibold font-mono transition-all bg-kubo-light text-kubo-dark hover:bg-gray-200">303xx</button>
+                <button type="button" data-filtro="s313" aria-pressed="false" class="cat-btn px-3 py-2 rounded-lg text-sm font-semibold font-mono transition-all bg-kubo-light text-kubo-dark hover:bg-gray-200">313xx</button>
+            </div>
+
+            <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article id="rolamento-32010x" data-slug="32010x" data-cat="cubo" data-serie="s320" data-codigo="32010 X" data-equiv="32010 X 32010-X-XL 4T-32010X" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 320xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 32010 X</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">50 × 80 × 20 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">32010 X</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">32010-X-XL</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-32010X</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="32010x" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 32010 X (ref. SKF 32010 X). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-32014x" data-slug="32014x" data-cat="cubo" data-serie="s320" data-codigo="32014 X" data-equiv="32014 X 32014-X-XL 4T-32014X" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 320xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 32014 X</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">70 × 110 × 25 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">32014 X</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">32014-X-XL</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-32014X</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="32014x" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 32014 X (ref. SKF 32014 X). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-32016x" data-slug="32016x" data-cat="cubo" data-serie="s320" data-codigo="32016 X" data-equiv="32016 X 32016-X-XL 4T-32016X" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 320xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 32016 X</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">80 × 125 × 29 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">32016 X</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">32016-X-XL</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-32016X</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="32016x" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 32016 X (ref. SKF 32016 X). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-32018x" data-slug="32018x" data-cat="cubo" data-serie="s320" data-codigo="32018 X" data-equiv="32018 X 32018-X-XL 4T-32018X" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 320xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 32018 X</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">90 × 140 × 32 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">32018 X</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">32018-X-XL</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-32018X</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="32018x" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 32018 X (ref. SKF 32018 X). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-32020x" data-slug="32020x" data-cat="cubo" data-serie="s320" data-codigo="32020 X" data-equiv="32020 X 32020-X-XL 4T-32020X" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 320xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 32020 X</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">100 × 150 × 32 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">32020 X</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">32020-X-XL</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-32020X</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="32020x" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 32020 X (ref. SKF 32020 X). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-32210" data-slug="32210" data-cat="cubo" data-serie="s322" data-codigo="32210" data-equiv="32210 J2 32210-A 4T-32210" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 322xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 32210</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">50 × 90 × 24,75 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">32210 J2</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">32210-A</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-32210</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="32210" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 32210 (ref. SKF 32210 J2). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-32212" data-slug="32212" data-cat="cubo" data-serie="s322" data-codigo="32212" data-equiv="32212 J2 32212-A 4T-32212" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 322xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 32212</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">60 × 110 × 29,75 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">32212 J2</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">32212-A</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-32212</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="32212" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 32212 (ref. SKF 32212 J2). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-32215" data-slug="32215" data-cat="cubo" data-serie="s322" data-codigo="32215" data-equiv="32215 J2 32215-A 4T-32215" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 322xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 32215</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">75 × 130 × 33,25 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">32215 J2</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">32215-A</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-32215</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="32215" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 32215 (ref. SKF 32215 J2). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-32218" data-slug="32218" data-cat="cubo" data-serie="s322" data-codigo="32218" data-equiv="32218 J2 32218-A 4T-32218" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 322xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 32218</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">90 × 160 × 42,5 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">32218 J2</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">32218-A</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-32218</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="32218" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 32218 (ref. SKF 32218 J2). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-30210" data-slug="30210" data-cat="cubo" data-serie="s302" data-codigo="30210" data-equiv="30210 J2 30210-A 4T-30210" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 302xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 30210</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">50 × 90 × 21,75 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">30210 J2</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">30210-A</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-30210</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="30210" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 30210 (ref. SKF 30210 J2). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-30215" data-slug="30215" data-cat="cubo" data-serie="s302" data-codigo="30215" data-equiv="30215 J2 30215-A 4T-30215" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 302xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 30215</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">75 × 130 × 27,25 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">30215 J2</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">30215-A</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-30215</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="30215" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 30215 (ref. SKF 30215 J2). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-30310" data-slug="30310" data-cat="cubo diferencial" data-serie="s303" data-codigo="30310" data-equiv="30310 J2 30310-A 4T-30310" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 303xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 30310</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda e Diferencial / pinhão</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">50 × 110 × 29,25 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">30310 J2</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">30310-A</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-30310</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="30310" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 30310 (ref. SKF 30310 J2). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-30315" data-slug="30315" data-cat="cubo diferencial" data-serie="s303" data-codigo="30315" data-equiv="30315 J2 30315-A 4T-30315" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 303xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 30315</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Cubo de roda e Diferencial / pinhão</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">75 × 160 × 40 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">30315 J2</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">30315-A</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-30315</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="30315" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 30315 (ref. SKF 30315 J2). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+                <article id="rolamento-31306" data-slug="31306" data-cat="diferencial" data-serie="s313" data-codigo="31306" data-equiv="31306 J2 31306-A 4T-31306" class="sku-card scroll-mt-28 bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-xl hover:border-kubo-dark transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="px-2.5 py-1 bg-kubo-light font-mono font-bold text-xs text-kubo-dark rounded border border-gray-200">Série 313xx</span>
+                            <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Sob consulta</span>
+                        </div>
+                        <h3 class="text-xl font-black text-kubo-dark font-mono group-hover:text-blue-600 transition-colors">Rolamento 31306</h3>
+                        <p class="text-xs text-kubo-medium font-medium mb-4">Rolos cônicos • Diferencial / pinhão</p>
+                        <div class="space-y-2 text-xs border-t border-gray-100 pt-3 mb-4">
+                            <div class="flex justify-between"><span class="text-kubo-medium">Medidas (d × D × T):</span><span class="font-mono font-semibold text-kubo-dark">30 × 72 × 20,75 mm</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">SKF:</span><span class="font-mono text-gray-700">31306 J2</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">FAG:</span><span class="font-mono text-gray-700">31306-A</span></div>
+                            <div class="flex justify-between"><span class="text-kubo-medium">NTN:</span><span class="font-mono text-gray-700">4T-31306</span></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-gray-100">
+                        <button type="button" data-ficha="31306" class="js-ficha py-2.5 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-kubo-dark font-semibold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Ver Ficha</button>
+                        <a href="#cadastro" data-wa="Olá! Quero cotar o rolamento 31306 (ref. SKF 31306 J2). Quantidade: " class="js-wa py-2.5 px-3 rounded-lg bg-kubo-dark hover:bg-black text-white font-bold text-xs transition-colors flex items-center justify-center gap-1"><i data-lucide="file-text" class="w-3.5 h-3.5"></i> Cotar</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="mt-12 bg-kubo-light rounded-2xl p-6 sm:p-8 border border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-kubo-dark text-white flex items-center justify-center shrink-0">
+                        <i data-lucide="database" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-kubo-dark">Procurando outro código, par em polegada ou lista OEM?</h3>
+                        <p class="text-xs sm:text-sm text-kubo-medium">Envie o código, o OEM ou a foto da gravação da capa e do cone. Conferimos a correspondência antes de cotar.</p>
+                    </div>
+                </div>
+                <a href="#cadastro" data-wa="Olá! Procuro um rolamento que não está no catálogo. Código/OEM: " class="js-wa shrink-0 bg-kubo-dark hover:bg-black text-white font-bold text-sm px-6 py-3.5 rounded-xl transition-all shadow">Consultar Código Especial</a>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="secao" id="catalogo" aria-labelledby="t-cat">
-      <div class="wrap">
-        <div class="cab-secao">
-          <h2 id="t-cat">Catálogo técnico: rolamentos de rolos cônicos</h2>
-          <p class="lead">Designação ISO, dimensões principais e referência cruzada com SKF, FAG e NTN. Kits e pares cone/capa em polegada sob consulta.</p>
+    <!-- POR MARCA DE CAMINHÃO -->
+    <section id="caminhoes" class="py-16 bg-kubo-light border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-bold uppercase tracking-widest text-kubo-medium block mb-1">Compatibilidade Conferida</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-kubo-dark tracking-tight">Rolamentos por Marca de Caminhão</h2>
+                <p class="text-sm text-kubo-medium mt-2">Aplicações por modelo, ano, eixo e posição. Informe o veículo e receba os códigos com kit e equivalentes.</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <a href="#cadastro" data-marca="Volvo" data-modelos="FH, FM, VM" data-wa="Olá! Preciso dos rolamentos para Volvo FH. Modelo/ano/eixo: " class="js-wa marca-card bg-white p-5 rounded-xl border border-gray-200 hover:border-kubo-dark hover:shadow-lg transition-all text-center group">
+                    <div class="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-full flex items-center justify-center text-kubo-dark group-hover:scale-110 transition-transform"><i data-lucide="truck" class="w-6 h-6"></i></div>
+                    <h3 class="font-bold text-base text-kubo-dark">Volvo</h3>
+                    <p class="text-xs text-kubo-medium mt-1">FH, FM, VM</p>
+                    <span class="inline-block mt-3 text-[11px] font-semibold text-kubo-accent">Ver peças &rarr;</span>
+                </a>
+                <a href="#cadastro" data-marca="Scania" data-modelos="Série R, S, P, G" data-wa="Olá! Preciso dos rolamentos para Scania R. Modelo/ano/eixo: " class="js-wa marca-card bg-white p-5 rounded-xl border border-gray-200 hover:border-kubo-dark hover:shadow-lg transition-all text-center group">
+                    <div class="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-full flex items-center justify-center text-kubo-dark group-hover:scale-110 transition-transform"><i data-lucide="truck" class="w-6 h-6"></i></div>
+                    <h3 class="font-bold text-base text-kubo-dark">Scania</h3>
+                    <p class="text-xs text-kubo-medium mt-1">Série R, S, P, G</p>
+                    <span class="inline-block mt-3 text-[11px] font-semibold text-kubo-accent">Ver peças &rarr;</span>
+                </a>
+                <a href="#cadastro" data-marca="Mercedes-Benz" data-modelos="Actros, Axor, Atego" data-wa="Olá! Preciso dos rolamentos para Mercedes-Benz Actros. Modelo/ano/eixo: " class="js-wa marca-card bg-white p-5 rounded-xl border border-gray-200 hover:border-kubo-dark hover:shadow-lg transition-all text-center group">
+                    <div class="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-full flex items-center justify-center text-kubo-dark group-hover:scale-110 transition-transform"><i data-lucide="truck" class="w-6 h-6"></i></div>
+                    <h3 class="font-bold text-base text-kubo-dark">Mercedes-Benz</h3>
+                    <p class="text-xs text-kubo-medium mt-1">Actros, Axor, Atego</p>
+                    <span class="inline-block mt-3 text-[11px] font-semibold text-kubo-accent">Ver peças &rarr;</span>
+                </a>
+                <a href="#cadastro" data-marca="VW / MAN" data-modelos="Constellation, Meteor" data-wa="Olá! Preciso dos rolamentos para VW Constellation. Modelo/ano/eixo: " class="js-wa marca-card bg-white p-5 rounded-xl border border-gray-200 hover:border-kubo-dark hover:shadow-lg transition-all text-center group">
+                    <div class="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-full flex items-center justify-center text-kubo-dark group-hover:scale-110 transition-transform"><i data-lucide="truck" class="w-6 h-6"></i></div>
+                    <h3 class="font-bold text-base text-kubo-dark">VW / MAN</h3>
+                    <p class="text-xs text-kubo-medium mt-1">Constellation, Meteor</p>
+                    <span class="inline-block mt-3 text-[11px] font-semibold text-kubo-accent">Ver peças &rarr;</span>
+                </a>
+                <a href="#cadastro" data-marca="DAF" data-modelos="XF, CF" data-wa="Olá! Preciso dos rolamentos para DAF XF. Modelo/ano/eixo: " class="js-wa marca-card bg-white p-5 rounded-xl border border-gray-200 hover:border-kubo-dark hover:shadow-lg transition-all text-center group">
+                    <div class="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-full flex items-center justify-center text-kubo-dark group-hover:scale-110 transition-transform"><i data-lucide="truck" class="w-6 h-6"></i></div>
+                    <h3 class="font-bold text-base text-kubo-dark">DAF</h3>
+                    <p class="text-xs text-kubo-medium mt-1">XF, CF</p>
+                    <span class="inline-block mt-3 text-[11px] font-semibold text-kubo-accent">Ver peças &rarr;</span>
+                </a>
+                <a href="#cadastro" data-marca="Iveco" data-modelos="S-Way, Hi-Way, Tector" data-wa="Olá! Preciso dos rolamentos para Iveco S-Way. Modelo/ano/eixo: " class="js-wa marca-card bg-white p-5 rounded-xl border border-gray-200 hover:border-kubo-dark hover:shadow-lg transition-all text-center group">
+                    <div class="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-full flex items-center justify-center text-kubo-dark group-hover:scale-110 transition-transform"><i data-lucide="truck" class="w-6 h-6"></i></div>
+                    <h3 class="font-bold text-base text-kubo-dark">Iveco</h3>
+                    <p class="text-xs text-kubo-medium mt-1">S-Way, Hi-Way, Tector</p>
+                    <span class="inline-block mt-3 text-[11px] font-semibold text-kubo-accent">Ver peças &rarr;</span>
+                </a>
+                <a href="#cadastro" data-marca="Ford" data-modelos="Cargo" data-wa="Olá! Preciso dos rolamentos para Ford Cargo. Modelo/ano/eixo: " class="js-wa marca-card bg-white p-5 rounded-xl border border-gray-200 hover:border-kubo-dark hover:shadow-lg transition-all text-center group">
+                    <div class="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-full flex items-center justify-center text-kubo-dark group-hover:scale-110 transition-transform"><i data-lucide="truck" class="w-6 h-6"></i></div>
+                    <h3 class="font-bold text-base text-kubo-dark">Ford</h3>
+                    <p class="text-xs text-kubo-medium mt-1">Cargo</p>
+                    <span class="inline-block mt-3 text-[11px] font-semibold text-kubo-accent">Ver peças &rarr;</span>
+                </a>
+                <a href="#cadastro" data-marca="Carretas" data-modelos="Randon, Librelato, Facchini" data-wa="Olá! Preciso dos rolamentos para carreta/semirreboque. Modelo/ano/eixo: " class="js-wa marca-card bg-white p-5 rounded-xl border border-gray-200 hover:border-kubo-dark hover:shadow-lg transition-all text-center group">
+                    <div class="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-full flex items-center justify-center text-kubo-dark group-hover:scale-110 transition-transform"><i data-lucide="container" class="w-6 h-6"></i></div>
+                    <h3 class="font-bold text-base text-kubo-dark">Carretas</h3>
+                    <p class="text-xs text-kubo-medium mt-1">Randon, Librelato, Facchini</p>
+                    <span class="inline-block mt-3 text-[11px] font-semibold text-kubo-accent">Ver peças &rarr;</span>
+                </a>
+            </div>
         </div>
-        <div class="tabela-topo">
-          <div class="filtros" role="group" aria-label="Filtrar por série">
-            <button type="button" data-filtro="todas" aria-pressed="true">Todas</button>
-            <button type="button" data-filtro="320" aria-pressed="false">320xx X</button>
-            <button type="button" data-filtro="322" aria-pressed="false">322xx</button>
-            <button type="button" data-filtro="302" aria-pressed="false">302xx</button>
-            <button type="button" data-filtro="303" aria-pressed="false">303xx</button>
-            <button type="button" data-filtro="313" aria-pressed="false">313xx</button>
-          </div>
-        </div>
-        <div class="tabela-rolagem" tabindex="0" role="region" aria-labelledby="t-cat">
-          <table>
-            <caption>d = diâmetro interno, D = diâmetro externo, T = largura total (mm, ISO 355). Equivalentes pela designação base de cada fabricante.</caption>
-            <thead>
-              <tr>
-                <th scope="col">KUBO</th>
-                <th scope="col" class="num">d</th>
-                <th scope="col" class="num">D</th>
-                <th scope="col" class="num">T</th>
-                <th scope="col">SKF</th>
-                <th scope="col">FAG</th>
-                <th scope="col">NTN</th>
-                <th scope="col">Aplicação típica</th>
-                <th scope="col"><span class="sr-only">Cotação</span></th>
-              </tr>
-            </thead>
-            <tbody>
-          <tr id="rolamento-32010x" data-serie="320" data-codigo="32010 X" data-equiv="32010 X 32010-X-XL 4T-32010X">
-            <td class="cod">32010 X</td>
-            <td class="num">50</td><td class="num">80</td><td class="num">20</td>
-            <td class="eq">32010 X</td><td class="eq">32010-X-XL</td><td class="eq">4T-32010X</td>
-            <td>Cubo</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 32010 X (ref. SKF 32010 X). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-32014x" data-serie="320" data-codigo="32014 X" data-equiv="32014 X 32014-X-XL 4T-32014X">
-            <td class="cod">32014 X</td>
-            <td class="num">70</td><td class="num">110</td><td class="num">25</td>
-            <td class="eq">32014 X</td><td class="eq">32014-X-XL</td><td class="eq">4T-32014X</td>
-            <td>Cubo</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 32014 X (ref. SKF 32014 X). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-32016x" data-serie="320" data-codigo="32016 X" data-equiv="32016 X 32016-X-XL 4T-32016X">
-            <td class="cod">32016 X</td>
-            <td class="num">80</td><td class="num">125</td><td class="num">29</td>
-            <td class="eq">32016 X</td><td class="eq">32016-X-XL</td><td class="eq">4T-32016X</td>
-            <td>Cubo</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 32016 X (ref. SKF 32016 X). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-32018x" data-serie="320" data-codigo="32018 X" data-equiv="32018 X 32018-X-XL 4T-32018X">
-            <td class="cod">32018 X</td>
-            <td class="num">90</td><td class="num">140</td><td class="num">32</td>
-            <td class="eq">32018 X</td><td class="eq">32018-X-XL</td><td class="eq">4T-32018X</td>
-            <td>Cubo</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 32018 X (ref. SKF 32018 X). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-32020x" data-serie="320" data-codigo="32020 X" data-equiv="32020 X 32020-X-XL 4T-32020X">
-            <td class="cod">32020 X</td>
-            <td class="num">100</td><td class="num">150</td><td class="num">32</td>
-            <td class="eq">32020 X</td><td class="eq">32020-X-XL</td><td class="eq">4T-32020X</td>
-            <td>Cubo</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 32020 X (ref. SKF 32020 X). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-32210" data-serie="322" data-codigo="32210" data-equiv="32210 J2 32210-A 4T-32210">
-            <td class="cod">32210</td>
-            <td class="num">50</td><td class="num">90</td><td class="num">24,75</td>
-            <td class="eq">32210 J2</td><td class="eq">32210-A</td><td class="eq">4T-32210</td>
-            <td>Cubo</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 32210 (ref. SKF 32210 J2). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-32212" data-serie="322" data-codigo="32212" data-equiv="32212 J2 32212-A 4T-32212">
-            <td class="cod">32212</td>
-            <td class="num">60</td><td class="num">110</td><td class="num">29,75</td>
-            <td class="eq">32212 J2</td><td class="eq">32212-A</td><td class="eq">4T-32212</td>
-            <td>Cubo</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 32212 (ref. SKF 32212 J2). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-32215" data-serie="322" data-codigo="32215" data-equiv="32215 J2 32215-A 4T-32215">
-            <td class="cod">32215</td>
-            <td class="num">75</td><td class="num">130</td><td class="num">33,25</td>
-            <td class="eq">32215 J2</td><td class="eq">32215-A</td><td class="eq">4T-32215</td>
-            <td>Cubo</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 32215 (ref. SKF 32215 J2). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-32218" data-serie="322" data-codigo="32218" data-equiv="32218 J2 32218-A 4T-32218">
-            <td class="cod">32218</td>
-            <td class="num">90</td><td class="num">160</td><td class="num">42,5</td>
-            <td class="eq">32218 J2</td><td class="eq">32218-A</td><td class="eq">4T-32218</td>
-            <td>Cubo</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 32218 (ref. SKF 32218 J2). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-30210" data-serie="302" data-codigo="30210" data-equiv="30210 J2 30210-A 4T-30210">
-            <td class="cod">30210</td>
-            <td class="num">50</td><td class="num">90</td><td class="num">21,75</td>
-            <td class="eq">30210 J2</td><td class="eq">30210-A</td><td class="eq">4T-30210</td>
-            <td>Cubo</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 30210 (ref. SKF 30210 J2). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-30215" data-serie="302" data-codigo="30215" data-equiv="30215 J2 30215-A 4T-30215">
-            <td class="cod">30215</td>
-            <td class="num">75</td><td class="num">130</td><td class="num">27,25</td>
-            <td class="eq">30215 J2</td><td class="eq">30215-A</td><td class="eq">4T-30215</td>
-            <td>Cubo</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 30215 (ref. SKF 30215 J2). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-30310" data-serie="303" data-codigo="30310" data-equiv="30310 J2 30310-A 4T-30310">
-            <td class="cod">30310</td>
-            <td class="num">50</td><td class="num">110</td><td class="num">29,25</td>
-            <td class="eq">30310 J2</td><td class="eq">30310-A</td><td class="eq">4T-30310</td>
-            <td>Cubo / diferencial</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 30310 (ref. SKF 30310 J2). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-30315" data-serie="303" data-codigo="30315" data-equiv="30315 J2 30315-A 4T-30315">
-            <td class="cod">30315</td>
-            <td class="num">75</td><td class="num">160</td><td class="num">40</td>
-            <td class="eq">30315 J2</td><td class="eq">30315-A</td><td class="eq">4T-30315</td>
-            <td>Cubo / diferencial</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 30315 (ref. SKF 30315 J2). Quantidade: ">Cotar</a></td>
-          </tr>
-          <tr id="rolamento-31306" data-serie="313" data-codigo="31306" data-equiv="31306 J2 31306-A 4T-31306">
-            <td class="cod">31306</td>
-            <td class="num">30</td><td class="num">72</td><td class="num">20,75</td>
-            <td class="eq">31306 J2</td><td class="eq">31306-A</td><td class="eq">4T-31306</td>
-            <td>Pinhão</td>
-            <td><a class="cotar js-wa" href="#cadastro" data-msg="Olá! Quero cotar o rolamento 31306 (ref. SKF 31306 J2). Quantidade: ">Cotar</a></td>
-          </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="nota-tabela">Correspondência de sufixo conferida contra a peça original em cada cotação. Não encontrou o código? <a class="js-wa" href="#cadastro" data-msg="Olá! Procuro um rolamento que não está no catálogo. Código/OEM: ">Envie o código ou o OEM</a>.</p>
-      </div>
     </section>
 
-    <section class="secao secao-cinza" id="caminhoes" aria-labelledby="t-cam">
-      <div class="wrap">
-        <div class="cab-secao">
-          <h2 id="t-cam">Rolamentos por marca de caminhão</h2>
-          <p class="lead">Aplicações mapeadas por modelo, ano, eixo e posição. Informe o veículo e receba os códigos com kit e equivalentes.</p>
+    <!-- SISTEMAS / APLICAÇÕES -->
+    <section id="sistemas" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-kubo-medium block mb-1">Linhas de Produto</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-kubo-dark tracking-tight">Sistemas Críticos do Veículo Pesado</h2>
+                <p class="text-sm text-kubo-medium mt-2">Carga combinada, torque e rotação exigem séries, montagem e conferência específicas em cada sistema.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <article id="cubo-de-roda" class="bg-kubo-light rounded-2xl border border-gray-200 overflow-hidden flex flex-col">
+                    <div class="bg-white border-b border-gray-200 p-4">
+                        <img src="/cubo-de-roda-rolamentos-conicos.svg" width="640" height="420" loading="lazy" class="w-full h-auto" alt="Corte de cubo de roda de caminhão com rolamento cônico interno, rolamento cônico externo, retentor e porca de ajuste">
+                    </div>
+                    <div class="p-8 flex flex-col justify-between flex-1">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-kubo-dark text-white flex items-center justify-center mb-6 -mt-14 relative shadow-lg"><i data-lucide="disc" class="w-6 h-6"></i></div>
+                            <h3 class="text-xl font-bold text-kubo-dark mb-3">Cubos de Roda &amp; Eixos</h3>
+                            <p class="text-sm text-kubo-medium leading-relaxed mb-6">Pares interno/externo para eixos dianteiros direcionais, trativos e eixos de implementos, fornecidos em kit com retentor da mesma posição.</p>
+                            <ul class="space-y-2 text-xs font-mono text-kubo-dark mb-6">
+                                <li class="bg-white p-2 rounded border border-gray-200">• Séries 320xx X, 322xx, 302xx, 303xx</li>
+                                <li class="bg-white p-2 rounded border border-gray-200">• Folga axial ajustada pela porca do cubo</li>
+                                <li class="bg-white p-2 rounded border border-gray-200">• Kit: interno + externo + retentor</li>
+                            </ul>
+                        </div>
+                        <button type="button" data-filtro-ir="cubo" class="js-ir-filtro w-full py-2.5 rounded-lg border border-kubo-dark text-kubo-dark font-bold text-xs hover:bg-kubo-dark hover:text-white transition-colors">Ver Rolamentos para Cubo</button>
+                    </div>
+                </article>
+
+                <article id="diferencial" class="bg-kubo-light rounded-2xl border border-gray-200 overflow-hidden flex flex-col">
+                    <div class="bg-white border-b border-gray-200 p-4">
+                        <img src="/diferencial-pinhao-rolamentos.svg" width="600" height="400" loading="lazy" class="w-full h-auto" alt="Corte do pinhão de diferencial apoiado em dois rolamentos cônicos opostos com espaçador de pré-carga">
+                    </div>
+                    <div class="p-8 flex flex-col justify-between flex-1">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-kubo-dark text-white flex items-center justify-center mb-6 -mt-14 relative shadow-lg"><i data-lucide="settings" class="w-6 h-6"></i></div>
+                            <h3 class="text-xl font-bold text-kubo-dark mb-3">Diferenciais &amp; Pinhão</h3>
+                            <p class="text-sm text-kubo-medium leading-relaxed mb-6">Rolamentos de pinhão e da caixa de satélites para eixos Meritor, Dana/Spicer e ZF, em séries métricas e pares cone/capa em polegada.</p>
+                            <ul class="space-y-2 text-xs font-mono text-kubo-dark mb-6">
+                                <li class="bg-white p-2 rounded border border-gray-200">• Séries 303xx, 313xx e polegada</li>
+                                <li class="bg-white p-2 rounded border border-gray-200">• Pré-carga por espaçador ou calço</li>
+                                <li class="bg-white p-2 rounded border border-gray-200">• Conferência por série do eixo e redução</li>
+                            </ul>
+                        </div>
+                        <button type="button" data-filtro-ir="diferencial" class="js-ir-filtro w-full py-2.5 rounded-lg border border-kubo-dark text-kubo-dark font-bold text-xs hover:bg-kubo-dark hover:text-white transition-colors">Ver Peças para Diferencial</button>
+                    </div>
+                </article>
+
+                <article id="transmissao" class="bg-kubo-light rounded-2xl border border-gray-200 overflow-hidden flex flex-col">
+                    <div class="bg-white border-b border-gray-200 p-4">
+                        <img src="/transmissao-rolamentos-cilindricos.svg" width="600" height="400" loading="lazy" class="w-full h-auto" alt="Corte de árvore de caixa de câmbio com engrenagens, apoiada em rolamentos de rolos cilíndricos">
+                    </div>
+                    <div class="p-8 flex flex-col justify-between flex-1">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-kubo-dark text-white flex items-center justify-center mb-6 -mt-14 relative shadow-lg"><i data-lucide="cog" class="w-6 h-6"></i></div>
+                            <h3 class="text-xl font-bold text-kubo-dark mb-3">Caixas de Câmbio &amp; Transmissão</h3>
+                            <p class="text-sm text-kubo-medium leading-relaxed mb-6">Rolos cilíndricos, esferas e agulhas para árvores primária, secundária e intermediária de caixas ZF e Eaton.</p>
+                            <ul class="space-y-2 text-xs font-mono text-kubo-dark mb-6">
+                                <li class="bg-white p-2 rounded border border-gray-200">• Tipos NU, NUP, NJ, esferas e agulhas</li>
+                                <li class="bg-white p-2 rounded border border-gray-200">• Conferência por modelo e série da caixa</li>
+                                <li class="bg-white p-2 rounded border border-gray-200">• Validação específica por aplicação</li>
+                            </ul>
+                        </div>
+                        <a href="#cadastro" data-wa="Olá! Preciso de rolamentos de caixa de câmbio. Modelo/série da caixa: " class="js-wa block text-center w-full py-2.5 rounded-lg border border-kubo-dark text-kubo-dark font-bold text-xs hover:bg-kubo-dark hover:text-white transition-colors">Consultar Peças para Câmbio</a>
+                    </div>
+                </article>
+            </div>
         </div>
-        <div class="marcas">
-        <a class="marca-item js-wa" data-marca="Volvo" href="#cadastro" data-msg="Olá! Preciso dos rolamentos para Volvo FH. Modelo/ano/eixo: ">
-          <h3>Volvo</h3>
-          <p>FH, FM, VM</p>
-        </a>
-        <a class="marca-item js-wa" data-marca="Scania" href="#cadastro" data-msg="Olá! Preciso dos rolamentos para Scania R. Modelo/ano/eixo: ">
-          <h3>Scania</h3>
-          <p>Série R, S, P e G</p>
-        </a>
-        <a class="marca-item js-wa" data-marca="Mercedes-Benz" href="#cadastro" data-msg="Olá! Preciso dos rolamentos para Mercedes-Benz Actros. Modelo/ano/eixo: ">
-          <h3>Mercedes-Benz</h3>
-          <p>Actros, Axor, Atego, Accelo</p>
-        </a>
-        <a class="marca-item js-wa" data-marca="Volkswagen" href="#cadastro" data-msg="Olá! Preciso dos rolamentos para VW Constellation. Modelo/ano/eixo: ">
-          <h3>Volkswagen</h3>
-          <p>Constellation, Meteor, Delivery</p>
-        </a>
-        <a class="marca-item js-wa" data-marca="DAF" href="#cadastro" data-msg="Olá! Preciso dos rolamentos para DAF XF. Modelo/ano/eixo: ">
-          <h3>DAF</h3>
-          <p>XF, CF</p>
-        </a>
-        <a class="marca-item js-wa" data-marca="Iveco" href="#cadastro" data-msg="Olá! Preciso dos rolamentos para Iveco S-Way. Modelo/ano/eixo: ">
-          <h3>Iveco</h3>
-          <p>S-Way, Hi-Way, Tector</p>
-        </a>
-        <a class="marca-item js-wa" data-marca="Ford" href="#cadastro" data-msg="Olá! Preciso dos rolamentos para Ford Cargo. Modelo/ano/eixo: ">
-          <h3>Ford</h3>
-          <p>Cargo</p>
-        </a>
-        <a class="marca-item js-wa" data-marca="Carretas e semirreboques" href="#cadastro" data-msg="Olá! Preciso dos rolamentos para carreta. Modelo/ano/eixo: ">
-          <h3>Carretas e semirreboques</h3>
-          <p>Randon, Librelato, Facchini, Guerra</p>
-        </a>
-        </div>
-      </div>
     </section>
 
-    <section class="secao" id="linhas" aria-labelledby="t-linhas">
-      <div class="wrap">
-        <div class="cab-secao">
-          <h2 id="t-linhas">Linhas de produto</h2>
+    <!-- ENGENHARIA & HOMOLOGAÇÃO -->
+    <section id="engenharia" class="py-16 sm:py-24 bg-kubo-dark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-kubo-steel block">Engenharia &amp; Homologação KUBO</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Rigor de laboratório para garantir máxima durabilidade nas estradas.</h2>
+                    <p class="text-gray-300 text-base leading-relaxed">Não comercializamos rolamento sem rastro. Todo fabricante e todo lote KUBO passa por controle de metalurgia, dureza, geometria e vibração antes de entrar no catálogo. Certificação é pré-requisito, não garantia.</p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                            <i data-lucide="microscope" class="w-6 h-6 text-emerald-400 mb-2"></i>
+                            <h3 class="font-bold text-base">Análise Metalúrgica</h3>
+                            <p class="text-xs text-gray-400 mt-1">Composição química, microestrutura de têmpera e inclusões não metálicas do aço de rolamento.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                            <i data-lucide="gauge" class="w-6 h-6 text-blue-400 mb-2"></i>
+                            <h3 class="font-bold text-base">Rugosidade &amp; Vibração</h3>
+                            <p class="text-xs text-gray-400 mt-1">Acabamento de pista medido e nível de vibração em giro comparado ao padrão homologado.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                            <i data-lucide="layers" class="w-6 h-6 text-amber-400 mb-2"></i>
+                            <h3 class="font-bold text-base">Dureza Controlada (HRC)</h3>
+                            <p class="text-xs text-gray-400 mt-1">Dureza Rockwell de pistas e rolos verificada por amostragem em cada lote.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                            <i data-lucide="qr-code" class="w-6 h-6 text-purple-400 mb-2"></i>
+                            <h3 class="font-bold text-base">Rastreabilidade por Lote</h3>
+                            <p class="text-xs text-gray-400 mt-1">Número de lote gravado na peça e ficha de liberação disponível para auditoria da frota.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 bg-white text-kubo-dark p-6 sm:p-8 rounded-2xl shadow-2xl relative">
+                    <div class="border-b pb-4 mb-6 flex justify-between items-center gap-4">
+                        <span class="font-extrabold text-sm uppercase text-kubo-dark tracking-wider flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            Ficha de Liberação de Lote
+                        </span>
+                        <span class="font-mono text-xs text-kubo-medium">modelo · 32218</span>
+                    </div>
+                    <div class="space-y-3 text-xs font-mono">
+                        <div class="p-3 bg-kubo-light rounded-lg flex justify-between items-center gap-3"><span class="font-semibold text-kubo-medium">Material (aço de rolamento):</span><span class="font-bold text-emerald-600 bg-emerald-100 px-2 py-0.5 rounded whitespace-nowrap">CONFORME</span></div>
+                        <div class="p-3 bg-kubo-light rounded-lg flex justify-between items-center gap-3"><span class="font-semibold text-kubo-medium">Dureza de pistas e rolos (HRC):</span><span class="font-bold text-emerald-600 bg-emerald-100 px-2 py-0.5 rounded whitespace-nowrap">CONFORME</span></div>
+                        <div class="p-3 bg-kubo-light rounded-lg flex justify-between items-center gap-3"><span class="font-semibold text-kubo-medium">Dimensional d, D, T (ISO 355):</span><span class="font-bold text-emerald-600 bg-emerald-100 px-2 py-0.5 rounded whitespace-nowrap">CONFORME</span></div>
+                        <div class="p-3 bg-kubo-light rounded-lg flex justify-between items-center gap-3"><span class="font-semibold text-kubo-medium">Rugosidade de pista (Ra):</span><span class="font-bold text-emerald-600 bg-emerald-100 px-2 py-0.5 rounded whitespace-nowrap">CONFORME</span></div>
+                        <div class="p-3 bg-kubo-light rounded-lg flex justify-between items-center gap-3"><span class="font-semibold text-kubo-medium">Vibração e ruído:</span><span class="font-bold text-emerald-600 bg-emerald-100 px-2 py-0.5 rounded whitespace-nowrap">CONFORME</span></div>
+                        <div class="p-3 bg-kubo-light rounded-lg flex justify-between items-center gap-3"><span class="font-semibold text-kubo-medium">Marcação de lote e embalagem:</span><span class="font-bold text-emerald-600 bg-emerald-100 px-2 py-0.5 rounded whitespace-nowrap">CONFORME</span></div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-200 text-center text-xs text-kubo-medium italic">Cada lote liberado gera uma ficha como esta, vinculada ao número gravado na peça.</div>
+                </div>
+            </div>
+
+            <!-- Etapas de homologação -->
+            <div class="mt-16 pt-10 border-t border-white/10">
+                <h3 class="text-lg font-bold mb-6">Como um fabricante é homologado</h3>
+                <ol class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <li class="p-4 rounded-xl bg-white/5 border border-white/10"><span class="font-mono text-xs text-kubo-steel">01</span><p class="font-bold text-sm mt-1">Cotação técnica</p><p class="text-xs text-gray-400 mt-1">Especificação, volume e requisitos de qualidade</p></li>
+                    <li class="p-4 rounded-xl bg-white/5 border border-white/10"><span class="font-mono text-xs text-kubo-steel">02</span><p class="font-bold text-sm mt-1">Amostras</p><p class="text-xs text-gray-400 mt-1">Certificados, material e tratamento térmico</p></li>
+                    <li class="p-4 rounded-xl bg-white/5 border border-white/10"><span class="font-mono text-xs text-kubo-steel">03</span><p class="font-bold text-sm mt-1">Laboratório</p><p class="text-xs text-gray-400 mt-1">Dimensional, metalurgia, dureza e vibração</p></li>
+                    <li class="p-4 rounded-xl bg-white/5 border border-white/10"><span class="font-mono text-xs text-kubo-steel">04</span><p class="font-bold text-sm mt-1">Teste em campo</p><p class="text-xs text-gray-400 mt-1">Montagem em frotas parceiras, com acompanhamento</p></li>
+                    <li class="p-4 rounded-xl bg-white/5 border border-white/10"><span class="font-mono text-xs text-kubo-steel">05</span><p class="font-bold text-sm mt-1">Lote piloto</p><p class="text-xs text-gray-400 mt-1">Volume reduzido, validado com oficinas e frotas</p></li>
+                    <li class="p-4 rounded-xl bg-white/5 border border-white/10"><span class="font-mono text-xs text-kubo-steel">06</span><p class="font-bold text-sm mt-1">Lote comercial</p><p class="text-xs text-gray-400 mt-1">Entrada no catálogo com rastreabilidade</p></li>
+                </ol>
+            </div>
         </div>
-
-        <article class="aplic" id="cubo-de-roda">
-          <figure class="aplic-img">
-            <img src="/cubo-de-roda-rolamentos-conicos.svg" width="640" height="420" loading="lazy"
-                 alt="Corte de cubo de roda de caminhão com rolamento cônico interno, rolamento cônico externo, retentor e porca de ajuste">
-          </figure>
-          <div>
-            <h3>Cubo de roda</h3>
-            <p>Pares interno/externo para eixos dianteiros direcionais, trativos e eixos de implementos. Fornecidos em kit com retentor da mesma posição.</p>
-            <dl class="specs">
-              <div><dt>Séries</dt><dd><code>320xx X</code> <code>322xx</code> <code>302xx</code> <code>303xx</code></dd></div>
-              <div><dt>Montagem</dt><dd>Par oposto, com folga axial ajustada pela porca do cubo</dd></div>
-              <div><dt>Kit</dt><dd>Rolamento interno + externo + retentor</dd></div>
-            </dl>
-          </div>
-        </article>
-
-        <article class="aplic" id="diferencial">
-          <figure class="aplic-img">
-            <img src="/diferencial-pinhao-rolamentos.svg" width="600" height="400" loading="lazy"
-                 alt="Corte do pinhão de diferencial apoiado em dois rolamentos cônicos opostos com espaçador de pré-carga, engrenando na coroa">
-          </figure>
-          <div>
-            <h3>Diferencial e pinhão</h3>
-            <p>Rolamentos de pinhão e da caixa de satélites para eixos Meritor, Dana/Spicer e ZF, em séries métricas e em polegada.</p>
-            <dl class="specs">
-              <div><dt>Séries</dt><dd><code>303xx</code> <code>313xx</code> e pares cone/capa em polegada</dd></div>
-              <div><dt>Montagem</dt><dd>Pré-carga por espaçador ou calço, conforme o eixo</dd></div>
-              <div><dt>Conferência</dt><dd>Por número de série do eixo e relação de redução</dd></div>
-            </dl>
-          </div>
-        </article>
-
-        <article class="aplic" id="transmissao">
-          <figure class="aplic-img">
-            <img src="/transmissao-rolamentos-cilindricos.svg" width="600" height="400" loading="lazy"
-                 alt="Corte de árvore de caixa de câmbio com engrenagens, apoiada em rolamentos de rolos cilíndricos">
-          </figure>
-          <div>
-            <h3>Transmissão</h3>
-            <p>Rolos cilíndricos, esferas e agulhas para árvores primária, secundária e intermediária de caixas ZF e Eaton.</p>
-            <dl class="specs">
-              <div><dt>Tipos</dt><dd>NU, NUP, NJ, rígidos de esferas e agulhas</dd></div>
-              <div><dt>Conferência</dt><dd>Por modelo e número de série da caixa</dd></div>
-              <div><dt>Liberação</dt><dd>Validação específica por aplicação antes do catálogo</dd></div>
-            </dl>
-          </div>
-        </article>
-      </div>
     </section>
 
-    <section class="secao eng" id="engenharia" aria-labelledby="t-eng">
-      <div class="wrap">
-        <div class="eng-grid">
-          <div>
-            <h2 id="t-eng">Engenharia e homologação KUBO</h2>
-            <p class="eng-lead">Nenhum fabricante e nenhum lote entra no catálogo sem controle de material, dureza, geometria e ruído. Certificação é pré-requisito, não garantia.</p>
-            <dl class="pilares">
-              <div><dt>Análise metalúrgica</dt><dd>Composição química, microestrutura de têmpera e nível de inclusões não metálicas do aço de rolamento.</dd></div>
-              <div><dt>Dureza controlada</dt><dd>Dureza Rockwell (HRC) de pistas e rolos verificada por amostragem em cada lote.</dd></div>
-              <div><dt>Geometria e acabamento</dt><dd>Dimensional pela classe de tolerância especificada e rugosidade de pista medida.</dd></div>
-              <div><dt>Ruído e vibração</dt><dd>Nível de vibração em giro comparado ao padrão aprovado na homologação.</dd></div>
-              <div><dt>Rastreabilidade por lote</dt><dd>Ficha de liberação vinculada ao número gravado na peça.</dd></div>
-            </dl>
-          </div>
+    <!-- PROGRAMA DE PARCEIROS B2B -->
+    <section id="parceiros" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-kubo-light via-white to-kubo-light border border-gray-200 rounded-3xl p-8 sm:p-12 shadow-sm">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
 
-          <figure class="ficha" aria-label="Modelo de ficha de liberação de lote">
-            <div class="ficha-topo">
-              <span>Ficha de liberação de lote</span>
-              <span class="mono">modelo</span>
+                    <div class="lg:col-span-8 space-y-4">
+                        <span class="px-3 py-1 bg-kubo-dark text-white rounded-full text-xs font-bold tracking-wider uppercase inline-block">Programa de Parceiros B2B</span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-kubo-dark">Soluções Diretas para Frotistas, Transportadoras e Oficinas</h2>
+                        <p class="text-sm sm:text-base text-kubo-medium leading-relaxed">Condições faturadas B2B, programação de entrega preventiva e kits montados para as revisões do seu parque de caminhões e carretas.</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                            <div class="bg-white p-4 rounded-xl border border-gray-200"><i data-lucide="package-check" class="w-5 h-5 text-kubo-dark mb-2"></i><h3 class="font-bold text-sm text-kubo-dark">Kits de Manutenção</h3><p class="text-xs text-kubo-medium mt-1">Rolamento + retentor + trava da mesma posição em um código de pedido.</p></div>
+                            <div class="bg-white p-4 rounded-xl border border-gray-200"><i data-lucide="percent" class="w-5 h-5 text-kubo-dark mb-2"></i><h3 class="font-bold text-sm text-kubo-dark">Tabela por Volume</h3><p class="text-xs text-kubo-medium mt-1">Condição diferenciada por consumo mensal e recorrência de compra.</p></div>
+                            <div class="bg-white p-4 rounded-xl border border-gray-200"><i data-lucide="headset" class="w-5 h-5 text-kubo-dark mb-2"></i><h3 class="font-bold text-sm text-kubo-dark">Suporte de Engenharia</h3><p class="text-xs text-kubo-medium mt-1">Identificação de códigos raros, OEM e equivalências.</p></div>
+                            <div class="bg-white p-4 rounded-xl border border-gray-200"><i data-lucide="calendar-check" class="w-5 h-5 text-kubo-dark mb-2"></i><h3 class="font-bold text-sm text-kubo-dark">Entrega Preventiva</h3><p class="text-xs text-kubo-medium mt-1">Reposição programada pelo calendário de revisões da frota.</p></div>
+                            <div class="bg-white p-4 rounded-xl border border-gray-200"><i data-lucide="receipt" class="w-5 h-5 text-kubo-dark mb-2"></i><h3 class="font-bold text-sm text-kubo-dark">Faturamento B2B</h3><p class="text-xs text-kubo-medium mt-1">Pedido e faturamento no CNPJ da empresa.</p></div>
+                            <div class="bg-white p-4 rounded-xl border border-gray-200"><i data-lucide="file-check-2" class="w-5 h-5 text-kubo-dark mb-2"></i><h3 class="font-bold text-sm text-kubo-dark">Ficha de Lote</h3><p class="text-xs text-kubo-medium mt-1">Liberação de lote enviada junto com cada entrega.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 space-y-4">
+                        <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+                            <img src="/frota-caminhoes-cubo-de-roda.svg" width="1200" height="450" loading="lazy" class="w-full h-auto" alt="Ilustração de cavalos mecânicos com semirreboque, com destaque no cubo da roda dianteira">
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-md text-center lg:text-left">
+                            <p class="text-sm font-bold text-kubo-dark mb-2">Precisa de cotação para lote de frota?</p>
+                            <p class="text-xs text-kubo-medium mb-6">Cadastre a frota e receba a proposta com os códigos por veículo e por eixo.</p>
+                            <a href="#cadastro" class="block text-center w-full bg-kubo-dark hover:bg-black text-white font-bold text-sm py-3 px-6 rounded-xl transition-all shadow">Cadastrar Minha Frota</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="ficha-id">
-              <span class="mono">32218</span>
-              <span>Lote <span class="mono">K00-0000</span></span>
-            </div>
-            <table class="ficha-tab">
-              <tbody>
-                <tr><th scope="row">Material</th><td>Aço para rolamento conforme especificação</td><td class="ok">Conforme</td></tr>
-                <tr><th scope="row">Dureza de pistas e rolos</th><td>Faixa especificada (HRC)</td><td class="ok">Conforme</td></tr>
-                <tr><th scope="row">Dimensional d, D, T</th><td>ISO 355 / classe de tolerância</td><td class="ok">Conforme</td></tr>
-                <tr><th scope="row">Rugosidade de pista</th><td>Ra máximo especificado</td><td class="ok">Conforme</td></tr>
-                <tr><th scope="row">Vibração</th><td>Padrão da homologação</td><td class="ok">Conforme</td></tr>
-                <tr><th scope="row">Marcação e embalagem</th><td>Lote gravado e etiqueta rastreável</td><td class="ok">Conforme</td></tr>
-              </tbody>
-            </table>
-            <figcaption>Cada lote liberado gera uma ficha como esta, disponível para auditoria da frota.</figcaption>
-          </figure>
         </div>
-
-        <h3 class="etapas-titulo">Como um fabricante é homologado</h3>
-        <ol class="etapas">
-          <li><strong>Cotação técnica</strong><span>Especificação, volume e requisitos de qualidade</span></li>
-          <li><strong>Amostras e documentação</strong><span>Certificados, material e tratamento térmico</span></li>
-          <li><strong>Laboratório</strong><span>Dimensional, metalurgia, dureza e vibração</span></li>
-          <li><strong>Teste em campo</strong><span>Montagem em frotas parceiras, com acompanhamento</span></li>
-          <li><strong>Lote piloto</strong><span>Volume reduzido, validado com oficinas e frotas</span></li>
-          <li><strong>Lote comercial</strong><span>Entrada no catálogo com rastreabilidade</span></li>
-        </ol>
-      </div>
     </section>
 
-    <section class="secao secao-cinza" id="parceiros" aria-labelledby="t-parc">
-      <div class="wrap parc-grid">
-        <div>
-          <h2 id="t-parc">Programa de Parceiros B2B</h2>
-          <p class="lead">Para frotistas, transportadoras e oficinas que compram rolamento todo mês. O cadastro abre condição comercial própria e atendimento técnico direto.</p>
-          <dl class="beneficios">
-            <div><dt>Kits de manutenção</dt><dd>Rolamentos, retentor e trava da mesma posição em um código de pedido.</dd></div>
-            <div><dt>Tabela por volume</dt><dd>Condição diferenciada por consumo mensal e recorrência de compra.</dd></div>
-            <div><dt>Entrega preventiva programada</dt><dd>Reposição alinhada ao calendário de revisões da frota.</dd></div>
-            <div><dt>Suporte de engenharia</dt><dd>Identificação de códigos raros, OEM e equivalências.</dd></div>
-            <div><dt>Faturamento B2B</dt><dd>Pedido e faturamento no CNPJ, com ficha de lote de cada entrega.</dd></div>
-          </dl>
-          <figure class="parc-img">
-            <img src="/frota-caminhoes-cubo-de-roda.svg" width="1200" height="450" loading="lazy"
-                 alt="Ilustração de cavalos mecânicos com semirreboque, com destaque no cubo da roda dianteira">
-          </figure>
-        </div>
+    <!-- CADASTRO DE FROTA -->
+    <section id="cadastro" class="py-16 sm:py-24 bg-kubo-light border-t border-gray-200 relative scroll-mt-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white border-2 border-kubo-dark rounded-3xl p-6 sm:p-10 shadow-2xl relative">
 
-        <form class="form" id="cadastro" novalidate>
-          <h3>Cadastrar frota</h3>
-          <p class="form-intro">Leva 2 minutos. Com esses dados, a proposta já chega com os códigos da sua frota.</p>
-          <div class="campos">
-            <div class="campo">
-              <label for="f-nome">Nome</label>
-              <input id="f-nome" name="nome" autocomplete="name" required>
-              <span class="erro" id="e-nome" aria-live="polite"></span>
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="inline-block px-3 py-1 bg-kubo-dark text-white rounded-full text-xs font-bold uppercase tracking-wider mb-2">Programa de Parceiros B2B</span>
+                    <h2 class="text-2xl sm:text-4xl font-black text-kubo-dark tracking-tight">Cadastrar Frota</h2>
+                    <p class="text-xs sm:text-sm text-kubo-medium mt-2">Leva 2 minutos. Com esses dados, a proposta já chega com os códigos da sua frota, os kits por eixo e a condição B2B.</p>
+                </div>
+
+                <form id="form-cadastro" class="space-y-5" novalidate>
+                    <div id="prefill-notice" class="hidden p-3 bg-blue-50 border border-blue-200 rounded-xl text-xs text-blue-800 flex items-center justify-between gap-3">
+                        <span class="flex items-center gap-2 font-medium"><i data-lucide="info" class="w-4 h-4 text-blue-600 shrink-0"></i> <span id="prefill-texto">---</span></span>
+                        <button type="button" id="prefill-limpar" class="text-blue-600 underline text-[11px]">limpar</button>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label for="f-nome" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">Nome *</label>
+                            <input id="f-nome" name="nome" autocomplete="name" required class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-kubo-dark focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="f-cargo" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">Cargo</label>
+                            <select id="f-cargo" name="cargo" class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-kubo-dark">
+                                <option>Gestor de frota</option><option>Chefe de manutenção</option><option>Compras / suprimentos</option><option>Sócio ou diretor</option><option>Outro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="f-empresa" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">Empresa *</label>
+                            <input id="f-empresa" name="empresa" autocomplete="organization" required class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-kubo-dark focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="f-cnpj" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">CNPJ</label>
+                            <input id="f-cnpj" name="cnpj" inputmode="numeric" placeholder="00.000.000/0000-00" class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm font-mono focus:outline-none focus:ring-2 focus:ring-kubo-dark focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="f-whats" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">WhatsApp com DDD *</label>
+                            <input id="f-whats" name="whats" type="tel" autocomplete="tel" required placeholder="(51) 90000-0000" class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-kubo-dark focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="f-email" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">E-mail comercial</label>
+                            <input id="f-email" name="email" type="email" autocomplete="email" class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-kubo-dark focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="f-cidade" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">Cidade / UF *</label>
+                            <input id="f-cidade" name="cidade" required placeholder="Ex.: Caxias do Sul/RS" class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-kubo-dark focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="f-frota" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">Veículos na frota *</label>
+                            <input id="f-frota" name="frota" type="number" min="1" inputmode="numeric" required class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm font-mono focus:outline-none focus:ring-2 focus:ring-kubo-dark focus:border-transparent">
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="f-veiculos" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">Composição da frota * <span class="normal-case tracking-normal font-medium text-kubo-medium">(marca, modelo, ano e quantidade)</span></label>
+                            <textarea id="f-veiculos" name="veiculos" rows="3" required placeholder="Ex.: 12 Volvo FH 540 2019, 8 Scania R450 2021, 20 carretas Randon 3 eixos" class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-kubo-dark focus:border-transparent"></textarea>
+                        </div>
+                        <div>
+                            <label for="f-oficina" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">Manutenção</label>
+                            <select id="f-oficina" name="oficina" class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-kubo-dark">
+                                <option>Oficina própria</option><option>Oficina própria e terceiros</option><option>Só oficinas terceiras</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="f-consumo" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">Consumo de rolamentos / mês</label>
+                            <select id="f-consumo" name="consumo" class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-kubo-dark">
+                                <option>Até 20 peças</option><option selected>20 a 50 peças</option><option>50 a 150 peças</option><option>Mais de 150 peças</option><option>Não sei informar</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="f-marca" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">Marca que usa hoje</label>
+                            <input id="f-marca" name="marca" placeholder="Ex.: SKF, FAG, Timken" class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-kubo-dark focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="f-prioridade" class="block text-xs font-bold text-kubo-dark uppercase tracking-wider mb-1.5">Prioridade</label>
+                            <select id="f-prioridade" name="prioridade" class="w-full px-4 py-3 bg-kubo-light border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-kubo-dark">
+                                <option>Disponibilidade e prazo</option><option>Reduzir custo por peça</option><option>Reduzir falhas prematuras</option><option>Padronizar fornecedor</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p id="form-erro" class="hidden text-sm font-semibold text-red-700 bg-red-50 border border-red-100 rounded-xl p-3"></p>
+
+                    <button type="submit" class="w-full py-4 rounded-xl bg-kubo-dark hover:bg-black text-white font-bold text-base transition-all shadow-lg flex items-center justify-center gap-2">
+                        <i data-lucide="send" class="w-5 h-5"></i>
+                        <span>Enviar Cadastro pelo WhatsApp</span>
+                    </button>
+                    <p class="text-center text-[11px] text-kubo-medium flex items-center justify-center gap-1"><i data-lucide="lock" class="w-3 h-3"></i> Dados tratados conforme a LGPD, só para contato comercial.</p>
+                </form>
             </div>
-            <div class="campo">
-              <label for="f-cargo">Cargo</label>
-              <select id="f-cargo" name="cargo">
-                <option>Gestor de frota</option>
-                <option>Chefe de manutenção</option>
-                <option>Compras / suprimentos</option>
-                <option>Sócio ou diretor</option>
-                <option>Outro</option>
-              </select>
-            </div>
-            <div class="campo">
-              <label for="f-empresa">Empresa</label>
-              <input id="f-empresa" name="empresa" autocomplete="organization" required>
-              <span class="erro" id="e-empresa" aria-live="polite"></span>
-            </div>
-            <div class="campo">
-              <label for="f-cnpj">CNPJ</label>
-              <input id="f-cnpj" name="cnpj" inputmode="numeric" placeholder="00.000.000/0000-00">
-            </div>
-            <div class="campo">
-              <label for="f-whats">WhatsApp</label>
-              <input id="f-whats" name="whats" type="tel" autocomplete="tel" placeholder="(51) 90000-0000" required>
-              <span class="erro" id="e-whats" aria-live="polite"></span>
-            </div>
-            <div class="campo">
-              <label for="f-email">E-mail</label>
-              <input id="f-email" name="email" type="email" autocomplete="email">
-            </div>
-            <div class="campo">
-              <label for="f-cidade">Cidade e UF</label>
-              <input id="f-cidade" name="cidade" autocomplete="address-level2" placeholder="Ex.: Caxias do Sul/RS" required>
-              <span class="erro" id="e-cidade" aria-live="polite"></span>
-            </div>
-            <div class="campo">
-              <label for="f-frota">Veículos na frota</label>
-              <input id="f-frota" name="frota" type="number" min="1" inputmode="numeric" required>
-              <span class="erro" id="e-frota" aria-live="polite"></span>
-            </div>
-            <div class="campo largo">
-              <label for="f-veiculos">Composição da frota <span class="ajuda">marca, modelo, ano e quantidade</span></label>
-              <textarea id="f-veiculos" name="veiculos" required placeholder="Ex.: 12 Volvo FH 540 2019, 8 Scania R450 2021, 20 carretas Randon 3 eixos"></textarea>
-              <span class="erro" id="e-veiculos" aria-live="polite"></span>
-            </div>
-            <div class="campo">
-              <label for="f-oficina">Manutenção</label>
-              <select id="f-oficina" name="oficina">
-                <option>Oficina própria</option>
-                <option>Oficina própria e terceiros</option>
-                <option>Só oficinas terceiras</option>
-              </select>
-            </div>
-            <div class="campo">
-              <label for="f-consumo">Consumo de rolamentos por mês</label>
-              <select id="f-consumo" name="consumo">
-                <option>Até 20 peças</option>
-                <option selected>20 a 50 peças</option>
-                <option>50 a 150 peças</option>
-                <option>Mais de 150 peças</option>
-                <option>Não sei informar</option>
-              </select>
-            </div>
-            <div class="campo">
-              <label for="f-marca">Marca que usa hoje</label>
-              <input id="f-marca" name="marca" placeholder="Ex.: SKF, FAG, Timken, genérico">
-            </div>
-            <div class="campo">
-              <label for="f-prioridade">Prioridade</label>
-              <select id="f-prioridade" name="prioridade">
-                <option>Reduzir custo por peça</option>
-                <option>Disponibilidade e prazo</option>
-                <option>Reduzir falhas prematuras</option>
-                <option>Padronizar fornecedor</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-rodape">
-            <p>Ao enviar, o WhatsApp abre com o cadastro preenchido. Tratamos os dados conforme a LGPD, só para contato comercial.</p>
-            <button class="btn btn-acao" type="submit">Enviar cadastro</button>
-          </div>
-        </form>
-      </div>
+        </div>
     </section>
 
-    <section class="secao" id="duvidas" aria-labelledby="t-faq">
-      <div class="wrap">
-        <div class="cab-secao">
-          <h2 id="t-faq">Perguntas frequentes</h2>
+    <!-- FAQ -->
+    <section id="duvidas" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold uppercase tracking-widest text-kubo-medium block mb-1">Atendimento Técnico</span>
+                <h2 class="text-3xl font-extrabold text-kubo-dark">Perguntas Frequentes</h2>
+            </div>
+            <div class="space-y-3">
+                <details class="group bg-kubo-light rounded-xl border border-gray-200 open:bg-white open:shadow-md transition-all">
+                    <summary class="cursor-pointer list-none flex items-center justify-between gap-4 p-5 font-bold text-kubo-dark">Como a KUBO confere a aplicação antes de cotar?<i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-kubo-medium shrink-0 transition-transform"></i></summary>
+                    <p class="px-5 pb-5 text-sm text-kubo-medium leading-relaxed">Cada pedido é cruzado por código do rolamento, código OEM e posição no veículo (modelo, ano, eixo e lado). Quando a referência vem de uma peça sem gravação legível, pedimos d, D e T medidos ou foto da gravação da capa e do cone antes de fechar a cotação.</p>
+                </details>
+                <details class="group bg-kubo-light rounded-xl border border-gray-200 open:bg-white open:shadow-md transition-all">
+                    <summary class="cursor-pointer list-none flex items-center justify-between gap-4 p-5 font-bold text-kubo-dark">Os sufixos X, J2, A, XL e o prefixo 4T mudam a aplicação?<i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-kubo-medium shrink-0 transition-transform"></i></summary>
+                    <p class="px-5 pb-5 text-sm text-kubo-medium leading-relaxed">A designação base ISO define as dimensões principais; sufixos e prefixos indicam gaiola, perfil interno, capacidade ou versão de projeto de cada fabricante. Em cubo e pinhão, a correspondência de sufixo é conferida caso a caso contra a peça original, e não tratada como intercambiável por padrão.</p>
+                </details>
+                <details class="group bg-kubo-light rounded-xl border border-gray-200 open:bg-white open:shadow-md transition-all">
+                    <summary class="cursor-pointer list-none flex items-center justify-between gap-4 p-5 font-bold text-kubo-dark">Como funciona a rastreabilidade?<i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-kubo-medium shrink-0 transition-transform"></i></summary>
+                    <p class="px-5 pb-5 text-sm text-kubo-medium leading-relaxed">Cada lote liberado tem ficha própria com os resultados da inspeção. O número de lote vai gravado na peça e impresso na embalagem, o que permite rastrear qualquer rolamento montado na frota até a sua liberação.</p>
+                </details>
+                <details class="group bg-kubo-light rounded-xl border border-gray-200 open:bg-white open:shadow-md transition-all">
+                    <summary class="cursor-pointer list-none flex items-center justify-between gap-4 p-5 font-bold text-kubo-dark">Vocês fornecem kit completo por posição de eixo?<i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-kubo-medium shrink-0 transition-transform"></i></summary>
+                    <p class="px-5 pb-5 text-sm text-kubo-medium leading-relaxed">Sim. Os kits de cubo reúnem rolamento interno, rolamento externo e retentor da mesma posição em um código de pedido, para a revisão não parar por falta de um item.</p>
+                </details>
+                <details class="group bg-kubo-light rounded-xl border border-gray-200 open:bg-white open:shadow-md transition-all">
+                    <summary class="cursor-pointer list-none flex items-center justify-between gap-4 p-5 font-bold text-kubo-dark">Como é definida a tabela B2B?<i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-kubo-medium shrink-0 transition-transform"></i></summary>
+                    <p class="px-5 pb-5 text-sm text-kubo-medium leading-relaxed">A condição comercial é definida depois do cadastro, a partir do tamanho da frota, do consumo mensal estimado e da recorrência de compra. Frotas com programação preventiva têm condição e prioridade de estoque próprias.</p>
+                </details>
+                <details class="group bg-kubo-light rounded-xl border border-gray-200 open:bg-white open:shadow-md transition-all">
+                    <summary class="cursor-pointer list-none flex items-center justify-between gap-4 p-5 font-bold text-kubo-dark">Atendem oficinas e distribuidores?<i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-kubo-medium shrink-0 transition-transform"></i></summary>
+                    <p class="px-5 pb-5 text-sm text-kubo-medium leading-relaxed">O foco é frota com manutenção própria. Oficinas especializadas, retíficas e distribuidores podem se cadastrar no programa de parceiros; o atendimento é avaliado por volume e região.</p>
+                </details>
+            </div>
         </div>
-        <div class="faq">
-        <details>
-          <summary>Como a KUBO confere a aplicação antes de cotar?</summary>
-          <div class="resp"><p>Cada pedido é cruzado por código do rolamento, código OEM e posição no veículo (modelo, ano, eixo e lado). Quando a referência vem de uma peça sem gravação legível, pedimos d, D e T medidos ou foto da gravação da capa e do cone antes de fechar a cotação.</p></div>
-        </details>
-        <details>
-          <summary>Os sufixos X, J2, A, XL e o prefixo 4T mudam a aplicação?</summary>
-          <div class="resp"><p>A designação base ISO define as dimensões principais; sufixos e prefixos indicam gaiola, perfil interno, capacidade ou versão de projeto de cada fabricante. Em aplicações de cubo e pinhão, a correspondência de sufixo é conferida caso a caso contra a peça original, e não tratada como intercambiável por padrão.</p></div>
-        </details>
-        <details>
-          <summary>Como funciona a rastreabilidade?</summary>
-          <div class="resp"><p>Cada lote liberado tem ficha própria com os resultados de inspeção de recebimento. O número de lote vai gravado na peça e impresso na embalagem, o que permite rastrear qualquer rolamento montado na frota até a sua liberação.</p></div>
-        </details>
-        <details>
-          <summary>Vocês fornecem kit completo por posição de eixo?</summary>
-          <div class="resp"><p>Sim. Os kits de cubo reúnem rolamento interno, rolamento externo e retentor da mesma posição, em um código de pedido, para que a revisão não pare por falta de um item.</p></div>
-        </details>
-        <details>
-          <summary>Como é definida a tabela B2B?</summary>
-          <div class="resp"><p>A condição comercial é definida depois do cadastro, a partir do tamanho da frota, do consumo mensal estimado e da recorrência de compra. Frotas com programação preventiva têm condição e prioridade de estoque próprias.</p></div>
-        </details>
-        <details>
-          <summary>Atendem oficinas e distribuidores?</summary>
-          <div class="resp"><p>O foco é frota com manutenção própria. Oficinas especializadas, retíficas e distribuidores podem se cadastrar no programa de parceiros; o atendimento é avaliado por volume e região.</p></div>
-        </details>
-        </div>
-      </div>
     </section>
+    </main>
 
-    <section class="cta-final" aria-labelledby="t-cta">
-      <div class="wrap">
-        <div>
-          <h2 id="t-cta">Precisa de cotação agora?</h2>
-          <p>Envie código, OEM ou foto da gravação da peça.</p>
+    <!-- MODAL FICHA SKU -->
+    <div id="sku-modal" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-start p-6 border-b border-gray-200">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-kubo-medium">Ficha Técnica</span>
+                    <h3 id="modal-titulo" class="text-2xl font-black text-kubo-dark font-mono mt-1">---</h3>
+                    <p id="modal-sub" class="text-sm text-kubo-medium"></p>
+                </div>
+                <button type="button" id="modal-fechar" class="p-2 rounded-lg hover:bg-gray-100 text-kubo-medium" aria-label="Fechar"><i data-lucide="x" class="w-5 h-5"></i></button>
+            </div>
+            <div id="modal-corpo" class="p-6 space-y-4 text-sm"></div>
         </div>
-        <a class="btn btn-acao js-wa" href="#cadastro" data-msg="Olá! Preciso de cotação. Código/OEM/quantidade: ">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12Z"/></svg>
-          Cotar pelo WhatsApp
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="rodape">
-    <div class="wrap">
-      <div>
-        <img class="logo-neg" src="/logo-kubo-rolamentos-negativo.png" alt="KUBO Rolamentos" width="160" height="64" loading="lazy">
-        <p>Rolamentos para linha pesada. Engenharia, confiabilidade e desempenho para o transporte pesado.</p>
-      </div>
-      <div>
-        <h2>Linhas</h2>
-        <ul>
-          <li><a href="#cubo-de-roda">Rolamento de cubo de roda</a></li>
-          <li><a href="#diferencial">Rolamento de diferencial</a></li>
-          <li><a href="#transmissao">Rolamento de câmbio</a></li>
-          <li><a href="#caminhoes">Rolamentos por caminhão</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Códigos</h2>
-        <ul>
-          <li><a href="#rolamento-32020x">Rolamento 32020 X</a></li>
-          <li><a href="#rolamento-32218">Rolamento 32218</a></li>
-          <li><a href="#rolamento-30215">Rolamento 30215</a></li>
-          <li><a href="#rolamento-30315">Rolamento 30315</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Atendimento B2B</h2>
-        <ul>
-          <li><a class="js-wa" href="#cadastro" data-msg="Olá! Vim pelo site da KUBO.">WhatsApp: (51) 99999-9999</a></li>
-          <li><a href="mailto:contato@kuborolamentos.com.br">contato@kuborolamentos.com.br</a></li>
-          <li>Segunda a sexta, 8h às 18h</li>
-        </ul>
-      </div>
     </div>
-    <div class="base">
-      <div class="wrap">
-        <span>© <span id="ano">2026</span> KUBO Rolamentos</span>
-        <span>Marcas citadas pertencem aos seus titulares e indicam apenas aplicação ou equivalência.</span>
-      </div>
+
+    <!-- TOAST -->
+    <div id="toast" class="hidden fixed bottom-24 sm:bottom-6 left-1/2 -translate-x-1/2 z-50 bg-kubo-dark text-white px-5 py-3 rounded-xl shadow-2xl text-sm font-medium items-center gap-2" role="status">
+        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i><span id="toast-texto"></span>
     </div>
-  </footer>
 
-  <div class="barra-mobile">
-    <a class="btn btn-acao" href="#cadastro">Cadastrar frota</a>
-    <a class="btn btn-linha js-wa" href="#cadastro" data-msg="Olá! Vim pelo site da KUBO e quero cotar rolamentos.">WhatsApp</a>
-  </div>
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a href="#cadastro" data-wa="Olá! Vim pelo site da KUBO e quero cotar rolamentos." class="js-wa fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl flex items-center justify-center transition-colors" aria-label="Falar no WhatsApp">
+        <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
 
-  <script src="/main.js" defer></script>
+    <!-- FOOTER -->
+    <footer class="bg-kubo-dark text-gray-400 text-xs py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-gray-800">
+                <div class="space-y-3">
+                    <img src="/logo-kubo-rolamentos-negativo.png" alt="KUBO Rolamentos" width="140" height="56" loading="lazy" class="w-[140px] h-auto">
+                    <p class="text-gray-400 leading-relaxed">Engenharia, confiabilidade e desempenho para o transporte pesado. Rolamentos para cubo de roda, diferencial e transmissão.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-sm mb-4">Aplicações Linha Pesada</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#cubo-de-roda" class="hover:text-white">Rolamento de cubo de roda</a></li>
+                        <li><a href="#diferencial" class="hover:text-white">Rolamento de diferencial e pinhão</a></li>
+                        <li><a href="#transmissao" class="hover:text-white">Rolamento de caixa de câmbio</a></li>
+                        <li><a href="#caminhoes" class="hover:text-white">Rolamentos Volvo, Scania e Mercedes-Benz</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-sm mb-4">Códigos Populares</h3>
+                    <ul class="space-y-2 font-mono">
+                        <li><a href="#rolamento-32020x" class="hover:text-white">Rolamento 32020 X</a></li>
+                        <li><a href="#rolamento-32218" class="hover:text-white">Rolamento 32218</a></li>
+                        <li><a href="#rolamento-30215" class="hover:text-white">Rolamento 30215</a></li>
+                        <li><a href="#rolamento-30315" class="hover:text-white">Rolamento 30315</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-sm mb-4">Atendimento B2B</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="message-square" class="w-3.5 h-3.5"></i> <a href="#cadastro" data-wa="Olá! Vim pelo site da KUBO." class="js-wa hover:text-white">WhatsApp: (51) 99999-9999</a></li>
+                        <li class="flex items-center gap-2"><i data-lucide="mail" class="w-3.5 h-3.5"></i> <a href="mailto:contato@kuborolamentos.com.br" class="hover:text-white">contato@kuborolamentos.com.br</a></li>
+                        <li class="flex items-center gap-2"><i data-lucide="clock" class="w-3.5 h-3.5"></i> Seg a Sex, 08h às 18h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row justify-between gap-4">
+                <p>© <span id="ano">2026</span> KUBO Rolamentos. Todos os direitos reservados.</p>
+                <p>Marcas citadas pertencem aos seus titulares e indicam apenas aplicação ou equivalência.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            'use strict';
+
+            // >>> Número oficial do WhatsApp (DDI + DDD + número, só dígitos) <<<
+            var WHATSAPP = '5551999999999';
+            var SKUS = {"32010x": {"code": "32010 X", "serie": "320", "d": "50", "D": "80", "T": "20", "skf": "32010 X", "fag": "32010-X-XL", "ntn": "4T-32010X", "sistema": "Cubo de roda"}, "32014x": {"code": "32014 X", "serie": "320", "d": "70", "D": "110", "T": "25", "skf": "32014 X", "fag": "32014-X-XL", "ntn": "4T-32014X", "sistema": "Cubo de roda"}, "32016x": {"code": "32016 X", "serie": "320", "d": "80", "D": "125", "T": "29", "skf": "32016 X", "fag": "32016-X-XL", "ntn": "4T-32016X", "sistema": "Cubo de roda"}, "32018x": {"code": "32018 X", "serie": "320", "d": "90", "D": "140", "T": "32", "skf": "32018 X", "fag": "32018-X-XL", "ntn": "4T-32018X", "sistema": "Cubo de roda"}, "32020x": {"code": "32020 X", "serie": "320", "d": "100", "D": "150", "T": "32", "skf": "32020 X", "fag": "32020-X-XL", "ntn": "4T-32020X", "sistema": "Cubo de roda"}, "32210": {"code": "32210", "serie": "322", "d": "50", "D": "90", "T": "24,75", "skf": "32210 J2", "fag": "32210-A", "ntn": "4T-32210", "sistema": "Cubo de roda"}, "32212": {"code": "32212", "serie": "322", "d": "60", "D": "110", "T": "29,75", "skf": "32212 J2", "fag": "32212-A", "ntn": "4T-32212", "sistema": "Cubo de roda"}, "32215": {"code": "32215", "serie": "322", "d": "75", "D": "130", "T": "33,25", "skf": "32215 J2", "fag": "32215-A", "ntn": "4T-32215", "sistema": "Cubo de roda"}, "32218": {"code": "32218", "serie": "322", "d": "90", "D": "160", "T": "42,5", "skf": "32218 J2", "fag": "32218-A", "ntn": "4T-32218", "sistema": "Cubo de roda"}, "30210": {"code": "30210", "serie": "302", "d": "50", "D": "90", "T": "21,75", "skf": "30210 J2", "fag": "30210-A", "ntn": "4T-30210", "sistema": "Cubo de roda"}, "30215": {"code": "30215", "serie": "302", "d": "75", "D": "130", "T": "27,25", "skf": "30215 J2", "fag": "30215-A", "ntn": "4T-30215", "sistema": "Cubo de roda"}, "30310": {"code": "30310", "serie": "303", "d": "50", "D": "110", "T": "29,25", "skf": "30310 J2", "fag": "30310-A", "ntn": "4T-30310", "sistema": "Cubo de roda e Diferencial / pinhão"}, "30315": {"code": "30315", "serie": "303", "d": "75", "D": "160", "T": "40", "skf": "30315 J2", "fag": "30315-A", "ntn": "4T-30315", "sistema": "Cubo de roda e Diferencial / pinhão"}, "31306": {"code": "31306", "serie": "313", "d": "30", "D": "72", "T": "20,75", "skf": "31306 J2", "fag": "31306-A", "ntn": "4T-31306", "sistema": "Diferencial / pinhão"}};
+
+            var waLink = function (msg) { return 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg || ''); };
+            var brl = function (v) { return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); };
+
+            function toast(texto) {
+                var t = document.getElementById('toast');
+                document.getElementById('toast-texto').textContent = texto;
+                t.classList.remove('hidden'); t.classList.add('flex');
+                clearTimeout(t._timer);
+                t._timer = setTimeout(function () { t.classList.add('hidden'); t.classList.remove('flex'); }, 3500);
+            }
+
+            // Links de WhatsApp contextuais
+            document.querySelectorAll('.js-wa').forEach(function (a) {
+                a.href = waLink(a.getAttribute('data-wa'));
+                a.target = '_blank';
+                a.rel = 'noopener';
+            });
+            document.getElementById('ano').textContent = new Date().getFullYear();
+
+            // Menu mobile
+            var btnMenu = document.getElementById('mobile-menu-btn');
+            var menu = document.getElementById('mobile-menu');
+            btnMenu.addEventListener('click', function () {
+                var aberto = menu.classList.toggle('hidden') === false;
+                btnMenu.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+            });
+            menu.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', function () { menu.classList.add('hidden'); btnMenu.setAttribute('aria-expanded', 'false'); });
+            });
+
+            // ---------- Calculadora ----------
+            var c = ['frota', 'diaria', 'falhas', 'dias', 'reducao'].reduce(function (o, k) { o[k] = document.getElementById('c-' + k); return o; }, {});
+            var simulacao = null;
+            function calcular() {
+                var f = +c.frota.value, d = +c.diaria.value, fa = +c.falhas.value, di = +c.dias.value, r = +c.reducao.value;
+                document.getElementById('o-frota').textContent = f + ' veículos';
+                document.getElementById('o-diaria').textContent = brl(d) + ' / dia';
+                document.getElementById('o-falhas').textContent = String(fa).replace('.', ',');
+                document.getElementById('o-dias').textContent = di + (di === 1 ? ' dia' : ' dias');
+                document.getElementById('o-reducao').textContent = r + '%';
+                var risco = f * fa * di * d;
+                document.getElementById('r-risco').textContent = brl(risco);
+                document.getElementById('r-economia').textContent = brl(risco * r / 100);
+                return { frota: f, risco: risco, economia: risco * r / 100 };
+            }
+            Object.keys(c).forEach(function (k) { c[k].addEventListener('input', calcular); });
+            calcular();
+
+            var aviso = document.getElementById('prefill-notice');
+            function mostrarAviso(texto) {
+                document.getElementById('prefill-texto').textContent = texto;
+                aviso.classList.remove('hidden'); aviso.classList.add('flex');
+            }
+            document.getElementById('prefill-limpar').addEventListener('click', function () {
+                simulacao = null; aviso.classList.add('hidden'); aviso.classList.remove('flex');
+            });
+            document.getElementById('calc-cta').addEventListener('click', function () {
+                simulacao = calcular();
+                var campo = document.getElementById('f-frota');
+                if (!campo.value) campo.value = simulacao.frota;
+                mostrarAviso('Simulação anexada: custo anual de paradas ' + brl(simulacao.risco) + ', prejuízo evitável ' + brl(simulacao.economia) + '.');
+                if (window.gtag) window.gtag('event', 'calculator_cta', { value: Math.round(simulacao.risco) });
+            });
+
+            // ---------- Filtro do catálogo ----------
+            var cards = Array.prototype.slice.call(document.querySelectorAll('.sku-card'));
+            var botoes = document.querySelectorAll('.cat-btn');
+            function filtrar(f) {
+                botoes.forEach(function (b) {
+                    var ativo = b.getAttribute('data-filtro') === f;
+                    b.setAttribute('aria-pressed', ativo ? 'true' : 'false');
+                    b.classList.toggle('bg-kubo-dark', ativo); b.classList.toggle('text-white', ativo); b.classList.toggle('shadow-sm', ativo);
+                    b.classList.toggle('bg-kubo-light', !ativo); b.classList.toggle('text-kubo-dark', !ativo);
+                });
+                cards.forEach(function (card) {
+                    var ok = f === 'todos' || card.getAttribute('data-serie') === f || card.getAttribute('data-cat').split(' ').indexOf(f) !== -1;
+                    card.classList.toggle('hidden', !ok);
+                });
+            }
+            botoes.forEach(function (b) { b.addEventListener('click', function () { filtrar(b.getAttribute('data-filtro')); }); });
+            document.querySelectorAll('.js-ir-filtro').forEach(function (b) {
+                b.addEventListener('click', function () {
+                    filtrar(b.getAttribute('data-filtro-ir'));
+                    document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            function destacar(card) {
+                filtrar('todos');
+                cards.forEach(function (x) { x.classList.remove('destaque'); });
+                card.classList.add('destaque');
+                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            function tratarHash() {
+                var h = location.hash.slice(1);
+                if (h.indexOf('rolamento-') === 0) {
+                    var card = document.getElementById(h);
+                    if (card) setTimeout(function () { destacar(card); }, 80);
+                }
+            }
+            window.addEventListener('hashchange', tratarHash);
+            tratarHash();
+
+            // ---------- Modal ficha técnica ----------
+            var modal = document.getElementById('sku-modal');
+            function linha(rotulo, valor, mono) {
+                return '<div class="flex justify-between gap-4 py-2 border-b border-gray-100"><span class="text-kubo-medium">' + rotulo + '</span><span class="' + (mono ? 'font-mono ' : '') + 'font-semibold text-kubo-dark text-right">' + valor + '</span></div>';
+            }
+            function abrirFicha(slug) {
+                var s = SKUS[slug]; if (!s) return;
+                document.getElementById('modal-titulo').textContent = 'Rolamento ' + s.code;
+                document.getElementById('modal-sub').textContent = 'Rolos cônicos • ' + s.sistema;
+                var msg = 'Olá! Quero cotar o rolamento ' + s.code + ' (ref. SKF ' + s.skf + '). Quantidade: ';
+                document.getElementById('modal-corpo').innerHTML =
+                    '<div>' + linha('Diâmetro interno (d)', s.d + ' mm', true) + linha('Diâmetro externo (D)', s.D + ' mm', true) +
+                    linha('Largura total (T)', s.T + ' mm', true) + linha('Série', s.serie + 'xx', true) + linha('Norma dimensional', 'ISO 355') + '</div>' +
+                    '<div><p class="text-xs font-bold uppercase tracking-wider text-kubo-medium mb-2">Referência cruzada</p>' +
+                    linha('SKF', s.skf, true) + linha('FAG', s.fag, true) + linha('NTN', s.ntn, true) + '</div>' +
+                    '<p class="text-xs text-kubo-medium bg-kubo-light rounded-lg p-3">Correspondência de sufixo conferida contra a peça original ou o código OEM antes da cotação.</p>' +
+                    '<div class="grid grid-cols-2 gap-2">' +
+                    '<a href="' + waLink(msg) + '" target="_blank" rel="noopener" class="py-3 rounded-xl bg-kubo-dark hover:bg-black text-white font-bold text-sm text-center">Cotar pelo WhatsApp</a>' +
+                    '<a href="#cadastro" class="js-fechar-modal py-3 rounded-xl border border-kubo-dark text-kubo-dark font-bold text-sm text-center hover:bg-kubo-light">Cadastrar frota</a></div>';
+                modal.classList.remove('hidden'); modal.classList.add('flex');
+                modal.querySelector('.js-fechar-modal').addEventListener('click', fecharFicha);
+                document.getElementById('modal-fechar').focus();
+            }
+            function fecharFicha() { modal.classList.add('hidden'); modal.classList.remove('flex'); }
+            document.querySelectorAll('.js-ficha').forEach(function (b) { b.addEventListener('click', function () { abrirFicha(b.getAttribute('data-ficha')); }); });
+            document.getElementById('modal-fechar').addEventListener('click', fecharFicha);
+            modal.addEventListener('click', function (e) { if (e.target === modal) fecharFicha(); });
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape') fecharFicha(); });
+
+            // ---------- Busca universal ----------
+            var norm = function (s) {
+                return (s || '').toString().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[\s\-\/\.]/g, '');
+            };
+            var indice = [];
+            cards.forEach(function (card) {
+                var cod = card.getAttribute('data-codigo');
+                indice.push({ rotulo: cod, tipo: 'Rolamento cônico', mono: true, chave: norm(cod + ' ' + card.getAttribute('data-equiv')), acao: function () { destacar(card); } });
+            });
+            document.querySelectorAll('.marca-card').forEach(function (el) {
+                var m = el.getAttribute('data-marca'), mod = el.getAttribute('data-modelos');
+                indice.push({ rotulo: m + ' (' + mod + ')', tipo: 'Caminhão', chave: norm(m + ' ' + mod),
+                    acao: function () { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); el.classList.add('ring-2', 'ring-kubo-accent'); setTimeout(function () { el.classList.remove('ring-2', 'ring-kubo-accent'); }, 2500); } });
+            });
+            [['Cubo de roda', 'cubo', 'cubo roda dianteiro traseiro kit ponta de eixo'],
+             ['Diferencial e pinhão', 'diferencial', 'diferencial pinhao coroa meritor dana spicer zf']].forEach(function (a) {
+                indice.push({ rotulo: a[0], tipo: 'Aplicação', chave: norm(a[0] + ' ' + a[2]),
+                    acao: function () { filtrar(a[1]); document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' }); } });
+            });
+            indice.push({ rotulo: 'Caixa de câmbio / transmissão', tipo: 'Aplicação', chave: norm('cambio caixa transmissao zf eaton'),
+                acao: function () { document.getElementById('transmissao').scrollIntoView({ behavior: 'smooth', block: 'center' }); } });
+
+            var form = document.getElementById('busca'), campo = document.getElementById('busca-campo'), lista = document.getElementById('sugestoes');
+            var atuais = [], sel = -1;
+            function fechar() { lista.hidden = true; campo.setAttribute('aria-expanded', 'false'); sel = -1; }
+            function render(q) {
+                var nq = norm(q);
+                lista.innerHTML = '';
+                if (!nq) { fechar(); return; }
+                atuais = indice.filter(function (i) { return i.chave.indexOf(nq) !== -1; }).slice(0, 7);
+                atuais.push({ rotulo: 'Perguntar ao especialista sobre "' + q.trim() + '"', tipo: 'WhatsApp',
+                    acao: function () { window.open(waLink('Olá! Procuro rolamento para: ' + q.trim()), '_blank', 'noopener'); } });
+                atuais.forEach(function (item, i) {
+                    var li = document.createElement('li');
+                    li.id = 'sug-' + i; li.setAttribute('role', 'option');
+                    li.className = 'flex justify-between items-center gap-4 px-4 py-3 cursor-pointer hover:bg-kubo-light';
+                    var r = document.createElement('span'); r.textContent = item.rotulo;
+                    r.className = item.mono ? 'font-mono font-bold text-kubo-dark' : 'font-semibold text-kubo-dark';
+                    var t = document.createElement('span'); t.textContent = item.tipo;
+                    t.className = 'text-[11px] font-semibold ' + (item.tipo === 'WhatsApp' ? 'text-emerald-700 bg-emerald-50' : 'text-kubo-medium bg-kubo-light') + ' px-2 py-0.5 rounded-full whitespace-nowrap';
+                    li.appendChild(r); li.appendChild(t);
+                    li.addEventListener('mousedown', function (e) { e.preventDefault(); escolher(i); });
+                    lista.appendChild(li);
+                });
+                lista.hidden = false; campo.setAttribute('aria-expanded', 'true'); sel = -1;
+            }
+            function marcar(i) {
+                lista.querySelectorAll('li').forEach(function (li, k) { li.classList.toggle('bg-kubo-light', k === i); li.setAttribute('aria-selected', k === i ? 'true' : 'false'); });
+                sel = i; campo.setAttribute('aria-activedescendant', 'sug-' + i);
+            }
+            function escolher(i) {
+                var item = atuais[i]; fechar();
+                if (item) item.acao();
+                if (window.gtag) window.gtag('event', 'search', { search_term: campo.value });
+            }
+            campo.addEventListener('input', function () { render(campo.value); });
+            campo.addEventListener('keydown', function (e) {
+                if (lista.hidden) return;
+                if (e.key === 'ArrowDown') { e.preventDefault(); marcar((sel + 1) % atuais.length); }
+                else if (e.key === 'ArrowUp') { e.preventDefault(); marcar((sel - 1 + atuais.length) % atuais.length); }
+                else if (e.key === 'Escape') fechar();
+            });
+            campo.addEventListener('blur', function () { setTimeout(fechar, 150); });
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (!campo.value.trim()) { campo.focus(); return; }
+                if (lista.hidden) render(campo.value);
+                escolher(sel >= 0 ? sel : 0);
+            });
+            document.querySelectorAll('.js-atalho').forEach(function (b) {
+                b.addEventListener('click', function () { campo.value = b.getAttribute('data-busca'); render(campo.value); campo.focus(); });
+            });
+
+            // ---------- Cadastro de frota -> WhatsApp ----------
+            var fc = document.getElementById('form-cadastro');
+            fc.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var obrig = { nome: 'Nome', empresa: 'Empresa', whats: 'WhatsApp', cidade: 'Cidade/UF', frota: 'Veículos na frota', veiculos: 'Composição da frota' };
+                var faltando = [];
+                Object.keys(obrig).forEach(function (k) {
+                    var el = fc.elements[k], vazio = !el.value.trim();
+                    el.setAttribute('aria-invalid', vazio ? 'true' : 'false');
+                    el.classList.toggle('border-red-400', vazio);
+                    if (vazio) faltando.push(obrig[k]);
+                });
+                var erro = document.getElementById('form-erro');
+                if (faltando.length) {
+                    erro.textContent = 'Preencha para enviar: ' + faltando.join(', ') + '.';
+                    erro.classList.remove('hidden');
+                    fc.querySelector('[aria-invalid="true"]').focus();
+                    return;
+                }
+                erro.classList.add('hidden');
+                var v = function (k) { return fc.elements[k].value.trim(); };
+                var l = [
+                    '*Cadastro de frota: Programa de Parceiros B2B KUBO*', '',
+                    'Nome: ' + v('nome') + ' (' + v('cargo') + ')',
+                    'Empresa: ' + v('empresa') + (v('cnpj') ? ' | CNPJ ' + v('cnpj') : ''),
+                    'Cidade/UF: ' + v('cidade'),
+                    'WhatsApp: ' + v('whats') + (v('email') ? ' | ' + v('email') : ''), '',
+                    'Veículos: ' + v('frota'),
+                    'Composição: ' + v('veiculos'),
+                    'Manutenção: ' + v('oficina'),
+                    'Consumo mensal: ' + v('consumo'),
+                    v('marca') ? 'Marca atual: ' + v('marca') : null,
+                    'Prioridade: ' + v('prioridade')
+                ];
+                if (simulacao) l.push('', 'Simulação no site: custo anual de paradas ' + brl(simulacao.risco) + ', prejuízo evitável ' + brl(simulacao.economia));
+                if (window.gtag) window.gtag('event', 'generate_lead', { method: 'cadastro_frota' });
+                window.open(waLink(l.filter(function (x) { return x !== null; }).join('\n')), '_blank', 'noopener');
+                toast('Cadastro pronto. Confirme o envio no WhatsApp.');
+            });
+
+            if (window.lucide) lucide.createIcons();
+        })();
+
+    </script>
 </body>
 </html>
