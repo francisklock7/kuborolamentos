@@ -9,7 +9,7 @@ Site estático (HTML + CSS + JS puro, sem build). Pronto para Vercel.
 ├── index.html          página principal
 ├── 404.html            página de erro
 ├── styles.css
-├── main.js             busca, filtro da tabela, WhatsApp e formulário
+├── main.js             busca, filtro, calculadora, WhatsApp e cadastro de frota
 ├── favicon.svg / favicon-32.png / apple-touch-icon.png
 ├── robots.txt
 ├── sitemap.xml
@@ -29,9 +29,14 @@ Site estático (HTML + CSS + JS puro, sem build). Pronto para Vercel.
 - [ ] Telefone no JSON-LD (`contactPoint.telephone`), gerado dentro do `<head>` do `index.html`.
 - [ ] Domínio: se não for `www.kuborolamentos.com.br`, troque em `index.html` (canonical, og:url, og:image, JSON-LD), `robots.txt` e `sitemap.xml`.
 - [ ] E-mail de contato e horário de atendimento no rodapé.
-- [ ] Conferir com o Geredi os textos técnicos (sinais de desgaste, séries mais comuns, FAQ) e a tabela de referências.
+- [ ] Conferir com o Geredi a tabela de equivalências (SKF/FAG/NTN), as linhas de produto e o FAQ.
+- [ ] Confirmar os compromissos dos KPIs antes de publicar: cotação em até 1 dia útil, lote gravado na peça e na embalagem, ISO 9001/IATF 16949 exigidas dos fabricantes.
 - [ ] Google Search Console: verificar o domínio e enviar o `sitemap.xml`.
-- [ ] Google Analytics 4 (opcional): o `main.js` já dispara `search` e `generate_lead` se o `gtag` estiver instalado.
+- [ ] Google Analytics 4 (opcional): o `main.js` já dispara `search`, `calculator_cta` e `generate_lead` se o `gtag` estiver instalado.
+
+## Cadastro de frota
+
+Hoje o formulário do Programa de Parceiros B2B monta a mensagem e abre o WhatsApp (inclui a simulação da calculadora, se o visitante usou). Para gravar os cadastros direto em planilha ou CRM, o próximo passo é uma função serverless na Vercel (`/api/cadastro`).
 
 ## Imagens
 

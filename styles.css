@@ -220,3 +220,96 @@ td a.cotar{font-weight:600;white-space:nowrap}
 }
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 figure{margin:0}
+
+/* ===== v2: KPIs, calculadora, engenharia, parceiros ===== */
+.hero h1{max-width:20ch}
+.kpis{background:var(--grafite);color:#fff}
+.kpis .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.kpi{padding:26px 24px;border-left:1px solid #454c58;display:flex;flex-direction:column;gap:4px}
+.kpi:first-child{border-left:0;padding-left:0}
+.kpi strong{font-size:1.2rem;font-weight:700;letter-spacing:-0.01em}
+.kpi span{font-size:.9rem;color:#b9c2c7;line-height:1.4}
+@media (max-width:900px){.kpis .wrap{grid-template-columns:1fr 1fr}.kpi{border-left:0;padding-left:0;border-top:1px solid #454c58}.kpi:nth-child(-n+2){border-top:0}}
+
+.calc{background:#1f242c;color:#fff}
+.calc h2{color:#fff}
+.calc p{color:#cfd6da}
+.calc-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:center}
+.selo{display:inline-block;font-size:.88rem;font-weight:600;color:#fff!important;border:1px solid #5C6B73;border-radius:999px;padding:6px 14px;margin-bottom:20px}
+.calc-lista{margin:24px 0 0;padding:0;list-style:none}
+.calc-lista li{padding:10px 0 10px 28px;border-top:1px solid #3a414c;position:relative;color:#e4e8eb}
+.calc-lista li::before{content:"";position:absolute;left:4px;top:18px;width:10px;height:6px;border-left:2px solid var(--aco);border-bottom:2px solid var(--aco);transform:rotate(-45deg)}
+.calc-painel{background:#fff;color:var(--grafite);border-radius:var(--raio);padding:30px}
+.calc-painel h3{font-size:1.1rem;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--linha)}
+.slider{margin-bottom:18px}
+.slider label{display:flex;justify-content:space-between;gap:12px;font-size:.93rem;font-weight:500;margin-bottom:6px}
+.slider output{font-family:var(--mono);font-weight:700;color:var(--grafite);white-space:nowrap}
+.slider input[type=range]{width:100%;accent-color:var(--acao);height:24px}
+.calc-resultado{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.calc-resultado div{background:var(--offwhite);border:1px solid var(--linha);border-radius:var(--raio);padding:16px}
+.calc-resultado span{display:block;font-size:.85rem;color:var(--mecanico);margin-bottom:4px}
+.calc-resultado strong{font-family:var(--mono);font-size:clamp(1.3rem,2.4vw,1.7rem);font-weight:700;letter-spacing:-0.02em}
+.calc-resultado .economia{background:#e9f1f8;border-color:#c7dbec}
+.calc-resultado .economia strong{color:var(--acao)}
+.calc-nota{font-size:.82rem;color:var(--mecanico)!important;margin:12px 0 18px}
+.btn-largo{width:100%;justify-content:center}
+@media (max-width:900px){.calc-grid{grid-template-columns:1fr;gap:36px}}
+@media (max-width:480px){.calc-resultado{grid-template-columns:1fr}.calc-painel{padding:22px}}
+
+.tabela-rolagem table{min-width:880px}
+td.eq{font-family:var(--mono);font-size:.9rem;color:var(--mecanico);white-space:nowrap}
+
+.marcas{grid-template-columns:repeat(4,minmax(0,1fr))}
+a.marca-item{text-decoration:none;color:var(--grafite);transition:background-color .15s}
+a.marca-item:hover{background:var(--offwhite)}
+a.marca-item h3{display:flex;justify-content:space-between;align-items:center}
+a.marca-item h3::after{content:"";width:8px;height:8px;border-top:2px solid var(--acao);border-right:2px solid var(--acao);transform:rotate(45deg)}
+a.marca-item p{margin:0}
+@media (max-width:900px){.marcas{grid-template-columns:1fr 1fr}}
+
+.specs{margin:20px 0 0;padding:0;border-top:1px solid var(--linha)}
+.specs div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--linha)}
+.specs dt{font-weight:600;font-size:.93rem}
+.specs dd{margin:0;color:var(--mecanico);font-size:.95rem}
+.specs code{display:inline-block;color:var(--grafite);font-weight:600;background:var(--offwhite);border:1px solid var(--linha);border-radius:4px;padding:1px 7px;margin:0 4px 4px 0}
+
+.eng{background:var(--grafite);color:#fff}
+.eng h2,.eng h3{color:#fff}
+.eng-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}
+.eng-lead{color:#cfd6da;font-size:1.1rem}
+.pilares{margin:28px 0 0;padding:0}
+.pilares div{padding:14px 0;border-top:1px solid #454c58}
+.pilares dt{font-weight:600}
+.pilares dd{margin:2px 0 0;color:#b9c2c7;font-size:.95rem}
+.ficha{background:#fff;color:var(--grafite);border-radius:var(--raio);padding:24px;box-shadow:0 20px 40px rgba(0,0,0,.25)}
+.ficha-topo{display:flex;justify-content:space-between;font-size:.85rem;color:var(--mecanico);padding-bottom:12px;border-bottom:1px solid var(--linha)}
+.ficha-id{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0}
+.ficha-id .mono{font-weight:700}
+.ficha-id>.mono{font-size:1.6rem}
+.ficha-tab{min-width:0!important;font-size:.9rem}
+.ficha-tab th{font-weight:600;padding:10px 8px 10px 0;width:36%}
+.ficha-tab td{padding:10px 8px;color:var(--mecanico)}
+.ficha-tab td.ok{font-weight:600;color:var(--acao);white-space:nowrap;text-align:right;padding-right:0}
+.ficha figcaption{font-size:.84rem;color:var(--mecanico);margin-top:14px}
+.etapas-titulo{margin-top:64px;font-size:1.15rem}
+.eng .etapas{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0 20px}
+.eng .etapas li{grid-template-columns:1fr;border-top:2px solid var(--aco);border-bottom:0;padding-top:14px}
+.eng .etapas li::before{grid-row:auto}
+.eng .etapas li:last-child{border-bottom:0}
+@media (max-width:980px){.eng-grid{grid-template-columns:1fr;gap:40px}.eng .etapas{grid-template-columns:1fr 1fr 1fr;gap:20px}}
+@media (max-width:560px){.eng .etapas{grid-template-columns:1fr 1fr}}
+
+.parc-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:56px;align-items:start}
+.beneficios{margin:24px 0 32px;padding:0}
+.beneficios div{padding:14px 0;border-top:1px solid var(--linha)}
+.beneficios dt{font-weight:700}
+.beneficios dd{margin:2px 0 0;color:var(--mecanico);font-size:.96rem}
+.parc-img{border:1px solid var(--linha);border-radius:var(--raio);overflow:hidden}
+.form h3{font-size:1.3rem;margin-bottom:4px}
+.form-intro{color:var(--mecanico);font-size:.95rem;margin-bottom:22px}
+@media (max-width:980px){.parc-grid{grid-template-columns:1fr}}
+.barra-mobile .btn-linha{flex:0 0 auto;margin-left:8px;background:#fff}
+.hero h1{max-width:14ch}
+.eng .etapas li{display:flex;flex-direction:column;gap:4px}
+.erro:empty{display:none}
+.campos{align-items:start}

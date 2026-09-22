@@ -36,7 +36,7 @@
   }
 
   // ---------- Filtro da tabela ----------
-  var linhas = Array.prototype.slice.call(document.querySelectorAll('#rolamentos tbody tr'));
+  var linhas = Array.prototype.slice.call(document.querySelectorAll('#catalogo tbody tr'));
   var botoesFiltro = document.querySelectorAll('.filtros button');
   function filtrar(serie) {
     botoesFiltro.forEach(function (b) {
@@ -78,7 +78,8 @@
   var indice = [];
   linhas.forEach(function (tr) {
     var cod = tr.getAttribute('data-codigo');
-    indice.push({ rotulo: cod, tipo: 'Rolamento cônico', chave: norm(cod), mono: true, acao: function () { destacarLinha(tr); } });
+    var eq = tr.getAttribute('data-equiv') || '';
+    indice.push({ rotulo: cod, tipo: 'Rolamento cônico', chave: norm(cod + ' ' + eq), mono: true, acao: function () { destacarLinha(tr); } });
   });
   document.querySelectorAll('.marca-item').forEach(function (el) {
     var nome = el.getAttribute('data-marca');
@@ -89,10 +90,10 @@
     });
   });
   [
-    ['Cubo de roda', 'cubo-de-roda', 'cubo roda roda dianteira traseira ponta de eixo'],
+    ['Cubo de roda', 'cubo-de-roda', 'cubo roda dianteira traseira ponta de eixo kit'],
     ['Diferencial e pinhão', 'diferencial', 'diferencial pinhao coroa eixo traseiro meritor dana spicer'],
     ['Caixa de câmbio', 'transmissao', 'cambio caixa transmissao zf eaton'],
-    ['Carretas e semirreboques', 'caminhoes', 'carreta semirreboque randon librelato facchini']
+    ['Programa de Parceiros B2B', 'parceiros', 'parceiro b2b cadastro frota tabela volume kit']
   ].forEach(function (a) {
     indice.push({
       rotulo: a[0], tipo: 'Aplicação', chave: norm(a[0] + ' ' + a[2]),
@@ -164,35 +165,80 @@
     });
   }
 
-  // ---------- Formulário de perfil da frota -> WhatsApp ----------
-  var ff = document.getElementById('form-frota');
+  // ---------- Calculadora de prevenção de prejuízos ----------
+  var brl = function (v) { return 'R$ ' + Math.round(v).toLocaleString('pt-BR'); };
+  var num = function (v) { return String(v).replace('.', ','); };
+  var c = {
+    frota: document.getElementById('c-frota'),
+    diaria: document.getElementById('c-diaria'),
+    falhas: document.getElementById('c-falhas'),
+    dias: document.getElementById('c-dias'),
+    reducao: document.getElementById('c-reducao')
+  };
+  function calcular() {
+    if (!c.frota) return;
+    var f = +c.frota.value, d = +c.diaria.value, fa = +c.falhas.value, di = +c.dias.value, r = +c.reducao.value;
+    document.getElementById('o-frota').textContent = f;
+    document.getElementById('o-diaria').textContent = brl(d);
+    document.getElementById('o-falhas').textContent = num(fa);
+    document.getElementById('o-dias').textContent = di;
+    document.getElementById('o-reducao').textContent = r + '%';
+    var risco = f * fa * di * d;
+    document.getElementById('r-risco').textContent = brl(risco);
+    document.getElementById('r-economia').textContent = brl(risco * r / 100);
+    return { frota: f, risco: risco, economia: risco * r / 100 };
+  }
+  Object.keys(c).forEach(function (k) { if (c[k]) c[k].addEventListener('input', calcular); });
+  calcular();
+
+  var ultimaSimulacao = null;
+  var calcCta = document.getElementById('calc-cta');
+  if (calcCta) {
+    calcCta.addEventListener('click', function () {
+      ultimaSimulacao = calcular();
+      var campoFrota = document.getElementById('f-frota');
+      if (campoFrota && !campoFrota.value) campoFrota.value = ultimaSimulacao.frota;
+      if (window.gtag) window.gtag('event', 'calculator_cta', { value: Math.round(ultimaSimulacao.risco) });
+    });
+  }
+
+  // ---------- Cadastro de frota (Programa de Parceiros B2B) -> WhatsApp ----------
+  var ff = document.getElementById('cadastro');
   if (ff) {
     ff.addEventListener('submit', function (e) {
       e.preventDefault();
-      var obrig = ['nome', 'empresa', 'veiculos'];
+      var obrig = ['nome', 'empresa', 'whats', 'cidade', 'frota', 'veiculos'];
       var ok = true;
       obrig.forEach(function (n) {
         var el = ff.elements[n];
         var erro = document.getElementById('e-' + n);
         var vazio = !el.value.trim();
         el.setAttribute('aria-invalid', vazio ? 'true' : 'false');
-        erro.textContent = vazio ? 'Preencha este campo para continuar.' : '';
+        if (erro) erro.textContent = vazio ? 'Campo obrigatório.' : '';
         if (vazio && ok) { el.focus(); ok = false; }
       });
       if (!ok) return;
       var v = function (n) { return ff.elements[n].value.trim(); };
-      var msg = [
-        'Olá! Quero enviar o perfil da minha frota para a KUBO.',
+      var linhas = [
+        '*Cadastro de frota: Programa de Parceiros B2B KUBO*',
         '',
-        'Nome: ' + v('nome'),
-        'Empresa: ' + v('empresa'),
-        v('cidade') ? 'Cidade/UF: ' + v('cidade') : null,
-        'Perfil: ' + v('perfil'),
-        'Veículos: ' + v('veiculos'),
-        'Rodagem média: ' + v('km'),
-        'Objetivo: ' + v('objetivo')
-      ].filter(function (l) { return l !== null; }).join('\n');
-      if (window.gtag) window.gtag('event', 'generate_lead', { method: 'whatsapp_form' });
+        'Nome: ' + v('nome') + ' (' + v('cargo') + ')',
+        'Empresa: ' + v('empresa') + (v('cnpj') ? ' | CNPJ ' + v('cnpj') : ''),
+        'Cidade/UF: ' + v('cidade'),
+        'WhatsApp: ' + v('whats') + (v('email') ? ' | ' + v('email') : ''),
+        '',
+        'Veículos: ' + v('frota'),
+        'Composição: ' + v('veiculos'),
+        'Manutenção: ' + v('oficina'),
+        'Consumo mensal: ' + v('consumo'),
+        v('marca') ? 'Marca atual: ' + v('marca') : null,
+        'Prioridade: ' + v('prioridade')
+      ];
+      if (ultimaSimulacao) {
+        linhas.push('', 'Simulação no site: custo anual de paradas ' + brl(ultimaSimulacao.risco) + ', prejuízo evitável ' + brl(ultimaSimulacao.economia));
+      }
+      var msg = linhas.filter(function (l) { return l !== null; }).join('\n');
+      if (window.gtag) window.gtag('event', 'generate_lead', { method: 'cadastro_frota' });
       window.open(waLink(msg), '_blank', 'noopener');
     });
   }
