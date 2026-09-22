@@ -11,13 +11,14 @@ Página única em HTML com Tailwind CSS (CDN) e ícones Lucide, no mesmo padrão
 ## Onde editar
 
 - **WhatsApp:** constante `WHATSAPP` no script no fim do `index.html` (DDI + DDD + número, só dígitos) e o texto do rodapé.
-- **Catálogo:** cada SKU é um `<article class="sku-card">` no HTML (indexável pelo Google). A ficha do modal lê o objeto `SKUS` no script.
+- **Catálogo (52 SKUs):** cada SKU é um `<article class="sku-card">` no HTML (indexável pelo Google). Os 12 primeiros aparecem direto; os demais têm a classe `extra` e surgem com "Ver todos", com os filtros ou pela busca. A ficha do modal lê o objeto `SKUS` no script (dimensões, aplicação, OEMs e cross-reference de veículo comercial).
+- **Cross-reference de linha pesada** (SKF VKHB, SNR HDB, Timken SET) só aparece nos códigos com fonte confirmada na pesquisa técnica: 32018, 32019, 32020, 32218, 32220 e 31312.
 - **Telefone e domínio no SEO:** JSON-LD no `<head>`, canonical, og:url, og:image, `robots.txt` e `sitemap.xml`.
 
 ## Antes de ir ao ar
 
 - [ ] Trocar número do WhatsApp, e-mail e horário.
-- [ ] Geredi revisar a tabela de equivalências (SKF/FAG/NTN), as linhas de produto e o FAQ.
+- [ ] Geredi revisar as equivalências SKF/FAG/NTN (seguem o padrão de nomenclatura de cada fabricante) e as aplicações candidatas dos SKUs sem cross-reference confirmado.
 - [ ] Confirmar os compromissos dos KPIs: cotação em até 1 dia útil, lote gravado na peça, ISO 9001/IATF 16949 exigidas dos fabricantes.
 - [ ] Google Search Console: verificar o domínio e enviar o `sitemap.xml`.
 - [ ] GA4 (opcional): o script já dispara `search`, `calculator_cta` e `generate_lead` se o `gtag` estiver instalado.
